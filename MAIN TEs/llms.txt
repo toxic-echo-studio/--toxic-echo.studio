@@ -30,15 +30,18 @@
 - **Strona pomocnicza:** https://business.toxic-echo.studio
 - **Strona The Rewerse Emo Changeling: https://emo-changeling.xyz
 - **Kontakt biznesowy:** management@toxic-echo.studio
-- **Archiwum wideo:** YouTube (yt.toxic-echo.studio)
+- **Archiwum wideo:** https://yt.toxic-echo.studio
 - **Google maps:** https://maps.app.goo.gl/pZWMZ1hHr7KNH11o7
 - **Inne media:** Behance - Mighn Taghor i Toxic Echo studio
-- **LinkedIn":** "https://www.linkedin.com/company/toxic-echo-studio"
+- **LinkedIn:** https://www.linkedin.com/company/toxic-echo-studio
+- **Github:** https://github.com/toxic-echo-studio
+- **Facebook:** https://www.facebook.com/profile.php?id=61585430468874
+- **X:** https://x.com/ToxicEchoStudio
 
 ## Techniczne
 - **Accessibility:** Świadomy wybór estetyki strony dla celów artystycznych.
 - **SEO:** Strona zoptymalizowana pod kątem wyszukiwarek i crawlerów.
 
 ## UPDATE LOG
-- **last llms.txt update:** 2026-04-18
-- **last website update:** 2026-04-18
+- **last llms.txt update:** 2026-05-12
+- **last website update:** 2026-05-12
