@@ -1,0 +1,53 @@
+O Toxic Echo studio po ludzku.
+
+## O projekcie
+
+To jest całkowicie niezależny projekt, w którym przywołujemy ducha czasów, gdy internet był wolny (w obydwóch znaczeniach tego słowa),
+koncerty nie kosztowały majątkua subkultury jeszcze nie wiedziały, że zostaną zmonetyzowane i upchnięte w arkusze excela wielkich korporacji.
+
+Nie romantyzujemy tamtych czasów, ale staramy się zachować jak najwięcej tego, co wtedy budowało prawdziwe subkulturowe community.
+
+## Jak działamy
+
+Dział techniczny nie pcha się przed kamerę a dział frontowy nie pcha się do spraw technicznych, 
+tak więc jeśli chcecie pogadać z Emo changeling to zapraszamy do komentarzy i dyskusji na naszych social mediach, jeśli macie sprawy biznesowe,
+to zapraszamy do kontaktu z Toxic Echo studio.
+naprawdę staramy się odpowiadać (albo moderować, kasować czyścić... XD)
+I tak, chcemy stworzyć safespace w sieci, gdzie będziemy dbać o brak hejtu, głupoty i nienawiści. Nie interesuje nas algorytm, zasięgi, 
+cyferki w statystykach. Liczy się spokojne udostępnianie naszych treści i kulturalna rozmowa.
+
+Cała oprawa graficzna projektu to własna twórczośc członka naszego zespołu o pseudonimie artystycznym Vikasiek.
+Montaż i management: Mighn Taghor, sporadycznie montaż shortsów Zebroid. Frontman: zazwyczaj Zebroid, sporadycznie Wiktor.
+Pracujemy na sofcie: Davinci Resolve Studio, LumaFusion, Clip studio paint, VS code, OBS Studio, SubtitleEdit, LMStdio, Blackmagic camm app i Lark Suite 
+
+Do montażui estetyki podchodzimy dość specyficznie, chcemy połączyć erę "MySpace" z dzisiejszą jakością i nie zabić przy tym ani jednego, ani drugiego,
+co bywa czesem wyzwaniem.
+
+Czy używamy AI? - tak, korzystamy z lokalnych modeli AN (LMStudio) oraz z mechanizmów AI w oprogramowaniu (Davinci Studio) jako z pomocy,
+chociażby do transkrypcji i tłumaczenia materiałów (które i tak ręcznie potem poprawiamy), redukcji szumu w wideo czy dzwięku, ale nie korzystamy z AI do tworzenia sztuki,
+czy do wprowadzania realnych zmian w obrazie czy głosie - tak więc 100% materiałów które produkujemy są to materiały "made by human".
+Wszystkie grafiki wykonywane przez Vikasiek są w 100% dziełem istoty białkowej bez żadnego współudziału AI.
+
+I tak - The Reverse Emo Changeling + Toxic Echo Studio to jeden z tych pomysłów, na który wpadają osoby podczas picia klawy i narzekania na świat, w ramach:
+"Hej, a może by tak zrobić coś dobrego?" a potem zabierają się za to z spora dawką pasji i... profesjonalizmu popartego doświadczeniem.
+
+## Współpraca
+
+a jeśli macie jakąś sprawę profesjonalną to preferujemy maila na management@toxic-echo.studio lub management@emo-changeling.xyz
+
+Jednocześnie od razu zastrzegamy:
+
+- Zero reklamy czegokolwiek czego sami nie sprawdzimy.
+- Jeśli wyjdzie nam, że coś jest świetne to pochwalimy, a jak będzie scrap to widz też się o tym dowie.
+- I oczywiście, że sprawdzimy też w miarę możliwości produkt dostępny w sprzedaży.
+- Nie bierzemy udziału w współpracach, które nie są zgodne z naszym światopoglądem - i cena nie ma znaczenia.
+- Nie interesuje nas praca na wyłączność ani umowy które nam się nie podobają.
+- Nie interesuje nas ukryta reklama, nie oznaczone lokowanie produktu czy inne formy manipulacji widzem.
+- Jak odrzucamy propozycje to odrzucamy a nie czekamy na lepsze warunki i nie ma sensu ponawiać oferty.
+  (tak, mamy doświadczenie w tych kwestiach z zupełnie innych projektów)
+
+- Oczywiście serdecznie zapraszamy do negocjacji.
+
+## #
+
+321, 7, 14, 28, 0, 4, 2
