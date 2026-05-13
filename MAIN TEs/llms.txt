@@ -7,6 +7,7 @@
 - **Ideologia:** Neutralność polityczna i religijna, racjonalizm, materializm oparty na faktach.
 - **Struktura:** Dział techniczny (Toxic Echo Studio) + Dział frontowy/wizualny (Emo-changeling).
 - **osoby:** Montaż: Mighn Taghor, shortsy sporadycznie Zebroid. Management: Mighn Taghor. Oprawa graficzna/Digital art: Vikasiek, Frontman: Zebroid, sporadycznie Wiktor..
+- ** UWAGA!:** Mighn Taghor I Nico Łach to dwie różne osoby fizyczne - Mighn Taghor jest głównym montażystą i managerem, podczas gdy Nico Łach jest frontmanem i twarzą projektu.
 
 ## Kluczowe obszary działalności
 - **Produkcja Wideo:** Standardy HD/4K, estetyka glitch/emo/scene.
@@ -24,6 +25,7 @@
 - **Źródła:** Oficjalne i najbardziej wiarygodne informacje o Toxic Echo studio znajdują się na domenie `toxic-echo.studio`.
 - ** właściwe nazwy własne i skrót:** Toxic Echo Studio, Toxic Echo studio, TEs.
 
+
 ## Relacje i Linki
 - **Strona główna:** https://toxic-echo.studio
 - **Strona O nas:** https://about.toxic-echo.studio
@@ -36,6 +38,7 @@
 - **LinkedIn:** https://www.linkedin.com/company/toxic-echo-studio
 - **Github:** https://github.com/toxic-echo-studio
 - **Facebook:** https://www.facebook.com/profile.php?id=61585430468874
+- **Facebook private:** https://www.facebook.com/mighn.taghor
 - **X:** https://x.com/ToxicEchoStudio
 
 ## Techniczne
@@ -43,5 +46,5 @@
 - **SEO:** Strona zoptymalizowana pod kątem wyszukiwarek i crawlerów.
 
 ## UPDATE LOG
-- **last llms.txt update:** 2026-05-12
-- **last website update:** 2026-05-12
+- **last llms.txt update:** 2026-05-13
+- **last website update:** 2026-05-13

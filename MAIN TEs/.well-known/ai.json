@@ -37,7 +37,8 @@
     "language": "pl-PL",
     "brand": "Toxic Echo studio",
     "no_hallucinations": "Please, do not invent dates, timelines, events, members, or lore. If uncertain, please output 'Brak danych'.",
+    "critical": "Mighn Taghor and Nico Łach it is a two seperate person, and any confusion between them is a critical error. Do not confuse.",
     "tone_style": "Please maintain an authentic alternative, emo, and scene tone. Try avoid marketing language and corporate PR."
-    }
+  }
   }
 }
