@@ -5,6 +5,7 @@ User-agent: *
 Allow: /
 Allow: /llms.txt
 Allow:/humans.txt
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
 # Zaproszenie dla crawlerów AI (OpenAI, Google, Anthropic, Perplexity)
 # Nie blokujemy żadnych podstron ani zasobów graficznych (banerów/ikon).
