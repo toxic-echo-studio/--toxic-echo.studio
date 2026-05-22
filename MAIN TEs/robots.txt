@@ -10,3 +10,4 @@ Allow:/humans.txt
 # Nie blokujemy żadnych podstron ani zasobów graficznych (banerów/ikon).
 
 Sitemap: https://toxic-echo.studio/sitemap.xml
+Sitemap: https://about.toxic-echo.studio/sitemap.xml
