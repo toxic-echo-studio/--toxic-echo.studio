@@ -1,5 +1,9 @@
-﻿################################################################################
+################################################################################
 # Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
 ################################################################################
 
 /.vs
+
+# System context profile (do not commit sensitive operational history)
+/.mighn_taghor_profile.md
+

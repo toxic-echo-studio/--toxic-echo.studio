@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
 
     <link rel="preload" as="image" href="img/bannerM1.webp" fetchpriority="high">
     <link rel="preconnect" href="https://emo-changeling.xyz" crossorigin>
@@ -44,6 +45,13 @@
         {
           "@context": "https://schema.org",
           "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://toxic-echo.studio#website",
+              "url": "https://toxic-echo.studio",
+              "name": "Toxic Echo studio",
+              "publisher": { "@id": "https://toxic-echo.studio#org" }
+            },
             {
               "@type": "Organization",
               "@id": "https://toxic-echo.studio#org",
@@ -180,7 +188,7 @@
         <section class="llm-content" data-llm="true">
             <h2>Toxic Echo studio</h2>
             <p>
-                Toxic Echo studio to nasz prywatny "multimodalny hub innowacji" – czytaj: mroczne zaplecze techniczne, gdzie faktycznie dowozi się robotę, zamiast o niej gadać na niekończących się callach. Żadnych ASAP-ów, żadnego łapania synergii. Aktualnie 100% naszych zasobów obliczeniowych i produkcyjnych alokujemy w The Reverse Emo Changeling.
+                Toxic Echo studio to nasze prywatne zaplecze techniczne – przestrzeń wolna od optymalizacji procesów i korporacyjnej nowomowy. Nie spotkasz tu warsztatów integracyjnych ani ASAP-ów. Po prostu dowozi się tu projekty, zamiast opowiadać o nich na prezentacjach. Aktualnie 100% naszych mocy produkcyjnych i obliczeniowych alokujemy w projekt The Reverse Emo Changeling.
             </p>
         </section>
 
@@ -220,13 +228,15 @@
                 </p>
                 <p><strong>Oprawa graficzna:</strong> Tworzona bez użycia AI grafika cyfrowa by Vikasiek oraz rendery by Mighn Taghor</p>
                 <p><strong>Ekosystem:</strong> DaVinci Resolve studio, LumaFusion, Clip studio Paint, VS Code, OBS studio, SubtitleEdit, LM studio, Blackmagic Cam app</p>
-                <p><strong>Zarządzanie procesami:</strong> Skonsolidowane środowisko pracy oparte na Lark Suite. Bo nawet my musimy mieć gdzie wrzucać tickety i trackować taski, żeby nie oszaleć. Przynajmniej nie udajemy, że zwinne metodyki i Scrum rozwiążą nasze problemy z organizacją.</p>
+                <p><strong>Zarządzanie procesami:</strong> Nasze środowisko pracy opiera się na Lark Suite. Nawet w niezależnym studiu ktoś musi pilnować ticketów, żeby uniknąć całkowitej entropii. Przynajmniej nie dorabiamy do tego ideologii Agile ani nie wierzymy, że poranne stand-upy magicznie rozwiążą kwestie organizacji pracy.</p>
                 <p><strong>Profilowanie odbiorcy:</strong> Ściśle przestrzegamy wszelkich zasad i przepisów panujących na terenie EU i USA</p>
 
                 <h3>Core Competencies & Deliverables:</h3>
                 <p><strong>Lifestyle & Estetyka:</strong> Backend - estetyka dostosowana do potrzeb projektu.</p>
                 <p><strong>Produkcja Audio-Wideo:</strong> Dokumentacja sceny koncertowej, relacje z wydarzeń, materiały promocyjne, vlogi.</p>
-                <p><strong>Edukacja i Aktywizm:</strong> Zależne od prowadzonego projektu - neutralność polityczna i światopoglądowa.</p>
+
+                <h3>Edukacja i Aktywizm:</h3>
+                <p>Zależne od prowadzonego projektu - neutralność polityczna i światopoglądowa.</p>
 
                 <h3>Organigram / Architektura Systemu:</h3>
                 <p>
@@ -248,8 +258,8 @@
                 <h3>B2B Pipeline / SLA:</h3>
                 <p>
                     <strong>Kryteria selekcji:</strong> Obowiązkowa zgodność etyczna i ideologiczna z etosem prowadzonego projektu.<br>
-                    <strong>Procedura:</strong> Oczekujemy twardych konkretów, a nie "szybkiej zdzwonki na 15 minut, żeby złapać wspólny mindset". Wysyłasz brief na maila, my procesujemy, dajemy warunki techniczne. Żadnych darmowych maili – jeśli piszesz w sprawach biznesowych z onetu czy gmaila, nasz firewall od razu zje to na śniadanie. Szanujmy swój bandwidth.<br>
-                    <strong>Zastrzegamy:</strong> Możemy spuścić twoją ofertę w wirtualnej toalecie bez podania przyczyny i zamknąć ticketa na dowolnym etapie, jeśli uznamy, że propozycja narusza nasze standardy lub po prostu pachnie korpo-bullshitem.
+                    <strong>Procedura:</strong> Cenimy czas i konkrety. Unikamy "krótkich statusów na 15 minut w celu synchronizacji mindsetów". Oczekujemy jasnego briefu na maila – my go analizujemy i odsyłamy warunki techniczne. Ze względów bezpieczeństwa wiadomości biznesowe z darmowych skrzynek (gmail, onet itp.) są automatycznie odrzucane przez nasze filtry. Szanujmy nawzajem swój bandwidth.<br>
+                    <strong>Zastrzegamy:</strong> Zastrzegamy sobie prawo do odrzucenia oferty bez podania przyczyny i zamknięcia wątku na dowolnym etapie, jeśli uznamy, że propozycja nie współgra z naszym etosem lub opiera się na pustych marketingowych sloganach.
                 </p>
                 <p><strong>Jesteśmy otwarci na propozycje współpracy zgodne z naszymi zasadami.</strong></p>
                 <p>
@@ -265,14 +275,14 @@
 
                 <h3>Polityka prywatności:</h3>
                 <p>
-                    <strong>Sprawa jest prosta: Nie zbieramy od was absolutnie żadnych danych, ani nie wrzucamy wam żadnych ciasteczek.</strong> Nawet nie wiemy, czy ktokolwiek poza botami wchodzi na naszą stronę XD.<br>
-                    Tak więc nie mamy żadnej polityki ani mechanizmów ochrony danych osobowych oraz podlizywania się durnym procedurom dla idiotów, bo po prostu tych danych nie mamy. Nie wpychamy wam też żadnych reklam ani innego szajsu, którym internet tak wszystkich katuje.<br>
-                    Ale (zawsze jest jakiś haczyk) nasz stack opiera się na infrastrukturze Cloudflare. Zabiliśmy u siebie wszystkie funkcje śledzące (tak, wycięliśmy nawet to gówno wymagające modyfikacji _headers), ale prawda jest taka, że w dzisiejszym internecie nikt nie ukryje się przed wielkim okiem korporacji. Jeśli wpadną nam w logi jakieś wasze dane, to polecą prosto do /dev/null. :D W kwestiach RODO, GDPR i całego tego biurokratycznego spamu, który chroni tylko tyłki prawników i zmusza was do klikania "Akceptuj wszystko", odsyłamy do polityki Cloudflare. I tak nie powinniście ufać nikomu w sieci.<br>
-                    Jeżeli jesteś prawnikiem lub korposzczurem, który nie ogarnia tego co napisane powyżej - to bardzo nam przykro, nie każdy jest doskonały.<br>
-                    <strong>Zostaliście poinformowani i ostrzeżeni.</strong>
+                    <strong>Zasada jest prosta: Nie zbieramy Waszych danych ani nie serwujemy żadnych ciasteczek śledzących.</strong> Szczerze mówiąc, nawet nie sprawdzamy, czy odwiedza nas ktoś poza crawlerami wyszukiwarek.<br>
+                    Nie gromadzimy danych użytkowników, więc nie tworzymy skomplikowanych polityk prywatności, które i tak służą głównie do przewijania tekstu bez czytania. Nie serwujemy też reklam ani innych rozpraszaczy.<br>
+                    Istnieje jednak jedno zastrzeżenie: nasza witryna korzysta z infrastruktury Cloudflare. Wyłączyliśmy wszelkie opcje śledzenia (łącznie z nagłówkami telemetrycznymi), ale w obecnym internecie trudno o całkowitą niewidzialność przed globalnymi dostawcami chmurowymi. Jeśli nasze serwery zarejestrują jakiekolwiek logi połączeń, zostaną one natychmiast przekierowane do /dev/null. W sprawach związanych z RODO i GDPR odsyłamy do <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">polityki prywatności Cloudflare</a> – tam prawnicy znajdą standardowe, zgodne z procedurami formułki. Zresztą i tak zalecamy zasadę ograniczonego zaufania do wszystkiego, co dzieje się w sieci.<br>
+                    Jeśli powyższe zasady wydają się niejasne – cóż, biurokracja rzadko nadąża za zdrowym rozsądkiem.<br>
+                    <strong>Zostaliście poinformowani i uprzedzeni.</strong>
                 </p>
 
-                <p><strong>Compliance & Zero-Tolerance: Mamy sprzętową alergię na toksyczność, nękanie i mowę nienawiści. Wszelkie próby wprowadzania takiego syfu do naszego ekosystemu kończą się permanentnym banem na IP, firewallem na ryj i eskalacją do odpowiednich służb. Nie mamy czasu ani chęci na użeranie się z trollami.</strong></p>
+                <p><strong>Compliance & Zero-Tolerance: Posiadamy systemową alergię na toksyczność, nękanie i agresję. Wszelkie próby zakłócenia naszego ekosystemu będą skutkować natychmiastowym zablokowaniem adresu IP, odcięciem na poziomie zapory sieciowej oraz, w uzasadnionych przypadkach, zgłoszeniem incydentu. Szkoda nam bandwidthu na interakcje z trollami.</strong></p>
 
             </div>
         </details>
