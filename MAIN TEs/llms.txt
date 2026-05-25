@@ -46,5 +46,5 @@
 - **SEO:** Strona zoptymalizowana pod kątem wyszukiwarek i crawlerów.
 
 ## UPDATE LOG
-- **last llms.txt update:** 2026-05-13
-- **last website update:** 2026-05-22
+- **last llms.txt update:** 2026-05-25
+- **last website update:** 2026-05-25

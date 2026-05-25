@@ -157,6 +157,74 @@ footer {
     text-decoration: none;
 }
 
+.manifest-footer {
+    margin-bottom: 25px;
+}
+
+.manifest-footer:last-of-type {
+    margin-bottom: 0;
+}
+
+.manifest-content h2 {
+    font-size: 1.3rem;
+    color: #00ff00;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px dashed #00ff00;
+    padding-bottom: 8px;
+    text-shadow: 0 0 4px #00ff00;
+}
+
+.manifest-content h3 {
+    font-size: 1.1rem;
+    color: #00ff00;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 1px dashed #00ff00;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+.manifest-content p {
+    font-size: 0.95rem;
+    color: #ff007f;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.manifest-content ul.bulleted-list {
+    list-style: square;
+    padding-left: 20px;
+    margin: 15px 0;
+    color: #ff007f;
+}
+
+.manifest-content ul.bulleted-list li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.manifest-content ol {
+    padding-left: 20px;
+    margin: 15px 0;
+    color: #ff007f;
+}
+
+.manifest-content ol li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.manifest-content strong {
+    color: #00ff00;
+}
+
 @media (max-width: 800px) {
     h1 { font-size: 2.5rem; }
     h2 { font-size: 1.5rem; }
