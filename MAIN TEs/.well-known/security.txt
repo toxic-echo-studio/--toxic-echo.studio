@@ -2,4 +2,4 @@ Contact: mailto:admin@toxic-echo.studio
 Expires: 2027-04-05T09:26:00Z
 Encryption: https://toxic-echo.studio/pgp-key.txt
 Preferred-Languages: en, pl
-Canonical: https://toxic.echo.studio/.well-known/security.txt
+Canonical: https://toxic-echo.studio/.well-known/security.txt
