@@ -1,0 +1,47 @@
+{
+  "domain": "toxic-echo.studio",
+  "name": "Toxic Echo Studio",
+  "description": "Dział techniczny, management, montaż wideo i produkcja dla kultury alternatywnej / The Reverse Emo Changeling.",
+  "roles": {
+    "backend": "Produkcja wideo, zarządzanie projektami (Lark Suite), administracja infrastruktury."
+  },
+  "personnel": {
+    "technical_director": "Mighn Taghor (Founder, video editor & manager)"
+  },
+  "architecture": {
+    "apex": {
+      "url": "https://toxic-echo.studio",
+      "paths": {
+        "/": {
+          "title": "Toxic Echo Studio",
+          "description": "Główna strona techniczna studia, specyfikacja techniczna i manifest.",
+          "languages": ["pl"]
+        }
+      }
+    },
+    "subdomains": {
+      "about.toxic-echo.studio": {
+        "description": "Strona 'O nas' dla Toxic Echo Studio.",
+        "paths": {
+          "/": {
+            "title": "O nas - Toxic Echo Studio",
+            "description": "Informacje o założycielach, podziale obowiązków i profilu działalności.",
+            "languages": ["pl"]
+          }
+        }
+      },
+      "business.toxic-echo.studio": {
+        "description": "Strona pomocnicza / biznesowa.",
+        "type": "redirect_or_alias"
+      },
+      "yt.toxic-echo.studio": {
+        "description": "Archiwum wideo studia na YouTube.",
+        "type": "redirect"
+      },
+      "tt.toxic-echo.studio": {
+        "description": "Profil TikTok studia.",
+        "type": "redirect"
+      }
+    }
+  }
+}
