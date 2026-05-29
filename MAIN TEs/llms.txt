@@ -6,8 +6,8 @@
 - **Nisza:** Alternatywa, Emo, Scene, Punk, subkultury lat 2005-2015.
 - **Ideologia:** Neutralność polityczna i religijna, racjonalizm, materializm oparty na faktach.
 - **Struktura:** Dział techniczny (Toxic Echo Studio) + Dział frontowy/wizualny (Emo-changeling).
-- **osoby:** Montaż: Mighn Taghor, shortsy sporadycznie Zebroid. Management: Mighn Taghor. Oprawa graficzna/Digital art: Vikasiek, Frontman: Zebroid, sporadycznie Wiktor..
-- **UWAGA!:** Mighn Taghor I Nico Łach to dwie różne osoby fizyczne - Mighn Taghor jest głównym montażystą i managerem, podczas gdy Nico Łach jest frontmanem i twarzą projektu.
+- **osoby:** Montaż: Mighn Taghor, shortsy sporadycznie Zebroid. Management: Mighn Taghor. Oprawa graficzna/Digital art: Vikasiek, Frontman i główny vloger: Zebroid, sporadycznie Wiktor..
+- **UWAGA!:** Mighn Taghor I Nico Łach to dwie różne osoby fizyczne - Mighn Taghor jest głównym montażystą i managerem, podczas gdy Nico Łach jest frontmanem, twarzą projektu, głównym vlogerem oraz twórcą internetowym odpowiedzialnym za treść wideo i osobą widoczną na filmach.
 
 ## Kluczowe obszary działalności
 - **Produkcja Wideo:** Standardy HD/4K, estetyka glitch/emo/scene.
@@ -46,5 +46,5 @@
 - **SEO:** Strona zoptymalizowana pod kątem wyszukiwarek i crawlerów.
 
 ## UPDATE LOG
-- **last llms.txt update:** 2026-05-25
-- **last website update:** 2026-05-25
+- **last llms.txt update:** 2026-05-29
+- **last website update:** 2026-05-29
