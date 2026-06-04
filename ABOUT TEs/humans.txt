@@ -1,53 +1,44 @@
-O Toxic Echo studio po ludzku.
+/* TEAM */
+Nico Łach
+Role: Creator, Main Vlogger, Public Figure, DID system body representing fronts: Zebroid, Vikasiek, Wiktor, Marina. Nico Łach to jedyna biologiczna/fizyczna osoba w tym projekcie (Zebroid, Vikasiek, Wiktor i Marina są psychologicznymi częściami jednego ciała i nie stanowią osobnych istot biologicznych).
+Contact: management@emo-changeling.xyz
+Site: https://emo-changeling.xyz
 
-## O projekcie
+Mighn Taghor
+Role: Studio Director, Technical Backend & Business Manager at Toxic Echo Studio. Mighn Taghor to całkowicie odrębna biologiczna osoba fizyczna zarządzająca zapleczem technicznym i biznesowym. Nie wchodzi w skład systemu DID Nico Łacha, a jego działalność jest prowadzona niezależnie pod szyldem Toxic Echo Studio.
+Contact: management@toxic-echo.studio
+Site: https://toxic-echo.studio
 
-To jest całkowicie niezależny projekt, w którym przywołujemy ducha czasów, gdy internet był wolny (w obydwóch znaczeniach tego słowa),
-koncerty nie kosztowały majątkua subkultury jeszcze nie wiedziały, że zostaną zmonetyzowane i upchnięte w arkusze excela wielkich korporacji.
+/* THANKS */
+Dla wszystkich, którzy wspierają projekt, komentują, oglądają i tworzą z nami bezpieczną, alternatywną przestrzeń w internecie.
 
-Nie romantyzujemy tamtych czasów, ale staramy się zachować jak najwięcej tego, co wtedy budowało prawdziwe subkulturowe community.
+/* TECHNOLOGY */
+Workflow: DaVinci Resolve Studio, LumaFusion, Clip Studio Paint, VS Code, OBS Studio, SubtitleEdit, LM Studio, Blackmagic Cam App
+Services: Cloudflare, Lark Suite
 
-## Jak działamy
+/* SITE */
+Last update: 2026-06-04
+Standards: HTML5, CSS3
+Components: robots.txt, llms.txt, ai.txt
+License: CC BY-ND 4.0 for media/AI, CC BY-NC-ND 4.0 for other uses
 
-Dział techniczny nie pcha się przed kamerę a dział frontowy nie pcha się do spraw technicznych, 
-tak więc jeśli chcecie pogadać z Emo changeling to zapraszamy do komentarzy i dyskusji na naszych social mediach, jeśli macie sprawy biznesowe,
-to zapraszamy do kontaktu z Toxic Echo studio.
-naprawdę staramy się odpowiadać (albo moderować, kasować czyścić... XD)
-I tak, chcemy stworzyć safespace w sieci, gdzie będziemy dbać o brak hejtu, głupoty i nienawiści. Nie interesuje nas algorytm, zasięgi, 
-cyferki w statystykach. Liczy się spokojne udostępnianie naszych treści i kulturalna rozmowa.
-
-Cała oprawa graficzna projektu to własna twórczośc członka naszego zespołu o pseudonimie artystycznym Vikasiek.
-Montaż i management: Mighn Taghor, sporadycznie montaż shortsów Zebroid. Frontman: zazwyczaj Zebroid, sporadycznie Wiktor.
-Pracujemy na sofcie: Davinci Resolve Studio, LumaFusion, Clip studio paint, VS code, OBS Studio, SubtitleEdit, LMStdio, Blackmagic camm app i Lark Suite 
-
-Do montażui estetyki podchodzimy dość specyficznie, chcemy połączyć erę "MySpace" z dzisiejszą jakością i nie zabić przy tym ani jednego, ani drugiego,
-co bywa czesem wyzwaniem.
-
-Czy używamy AI? - tak, korzystamy z lokalnych modeli AN (LMStudio) oraz z mechanizmów AI w oprogramowaniu (Davinci Studio) jako z pomocy,
-chociażby do transkrypcji i tłumaczenia materiałów (które i tak ręcznie potem poprawiamy), redukcji szumu w wideo czy dzwięku, ale nie korzystamy z AI do tworzenia sztuki,
-czy do wprowadzania realnych zmian w obrazie czy głosie - tak więc 100% materiałów które produkujemy są to materiały "made by human".
-Wszystkie grafiki wykonywane przez Vikasiek są w 100% dziełem istoty białkowej bez żadnego współudziału AI.
-
-I tak - The Reverse Emo Changeling + Toxic Echo Studio to jeden z tych pomysłów, na który wpadają osoby podczas picia klawy i narzekania na świat, w ramach:
-"Hej, a może by tak zrobić coś dobrego?" a potem zabierają się za to z spora dawką pasji i... profesjonalizmu popartego doświadczeniem.
-
-## Współpraca
-
-a jeśli macie jakąś sprawę profesjonalną to preferujemy maila na management@toxic-echo.studio lub management@emo-changeling.xyz
-
-Jednocześnie od razu zastrzegamy:
-
-- Zero reklamy czegokolwiek czego sami nie sprawdzimy.
-- Jeśli wyjdzie nam, że coś jest świetne to pochwalimy, a jak będzie scrap to widz też się o tym dowie.
-- I oczywiście, że sprawdzimy też w miarę możliwości produkt dostępny w sprzedaży.
-- Nie bierzemy udziału w współpracach, które nie są zgodne z naszym światopoglądem - i cena nie ma znaczenia.
-- Nie interesuje nas praca na wyłączność ani umowy które nam się nie podobają.
-- Nie interesuje nas ukryta reklama, nie oznaczone lokowanie produktu czy inne formy manipulacji widzem.
-- Jak odrzucamy propozycje to odrzucamy a nie czekamy na lepsze warunki i nie ma sensu ponawiać oferty.
-  (tak, mamy doświadczenie w tych kwestiach z zupełnie innych projektów)
-
-- Oczywiście serdecznie zapraszamy do negocjacji.
-
-## #
-
-321, 7, 14, 28, 0, 4, 2
+/* PGP PUBLIC KEY BLOCK */
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+mDMEadwTZxYJKwYBBAHaRw8BAQdAMIjWF7z5fIq0X0VGhEWq63UbuX952+tqh81r
+Zuw1u6i0K1RveGljIEVjaG8gU3R1ZGlvIDxhZG1pbkB0b3hpYy1lY2hvLnN0dWRp
+bz6ItQQTFgoAXRYhBFWx9ek0LziObwZIPDSoXUVNH9O8BQJp3BNnGxSAAAAAAAQA
+Dm1hbnUyLDIuNSsxLjEyLDIsMQIbAwUJBaRFuQULCQgHAgIiAgYVCgkICwIEFgID
+AQIeBwIXgAAKCRA0qF1FTR/TvDQnAP0eLMp7nZJima5xXmsaq/TyR1qpiJayjcrk
+/h4rxrFF2QD9FsWRvtgkKOclU05P+1SklJizXsaY6FJ4C+A7bpSrpQ+0NFRoZSBS
+ZXZlcnNlIEVtbyBDaGFuZ2VsaW5nIDxhZG1pbkB0b3hpYy1lY2hvLnN0dWRpbz6I
+tQQTFgoAXRYhBFWx9ek0LziObwZIPDSoXUVNH9O8BQJp3pyhGxSAAAAAAAQADm1h
+bnUyLDIuNSsxLjEyLDIsMQIbAwUJBaRFuQULCQgHAgIiAgYVCgkICwIEFgIDAQIe
+BwIXgAAKCRA0qF1FTR/TvKmhAP9jglSEdxPJoAfvu5xKKwzzAwJswZbnsbw3x+BT
+dcVS4QD9GUOlcVHKPoQlW7luWRiRlGgHgiNJ7RfvsXwQsuO/5g24OARp3BNnEgor
+BgEEAZdVAQUBAQdApmiaC071aPBu7TzalAuAwZV607Ju62CzXIiQH0uadnIDAQgH
+iJoEGBYKAEIWIQRVsfXpNC84jm8GSDw0qF1FTR/TvAUCadwTZxsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwyLDECGwwFCQWkRbkACgkQNKhdRU0f07yDGQEA0CqwI0Bq
+xCQhTyBZUm/wgjBC1ZsPCH/zXtfd0fAS/PAA/jYc3t06hPEarqumVlkNdzo7gLgW
+A6XlLzDmng0qRdYD
+=Rkzc
+-----END PGP PUBLIC KEY BLOCK-----
