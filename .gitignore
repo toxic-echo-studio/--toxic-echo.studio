@@ -7,3 +7,11 @@
 # System context profile (do not commit sensitive operational history)
 /.mighn_taghor_profile.md
 
+# Local build / environment files
+/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+/.agents/
+/.vscode/
+
