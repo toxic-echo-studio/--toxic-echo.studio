@@ -1,27 +1,30 @@
 /* TEAM */
 Nico Łach
-Role: Creator, Main Vlogger, Public Figure, DID system body representing fronts: Zebroid, Vikasiek, Wiktor, Marina. Nico Łach to jedyna biologiczna/fizyczna osoba w tym projekcie (Zebroid, Vikasiek, Wiktor i Marina są psychologicznymi częściami jednego ciała i nie stanowią osobnych istot biologicznych).
+Role: Creator, Main Vlogger, Public Figure, DID system body representing fronts: Zebroid, Vikasiek, Wiktor, Marina. Nico Łach to jedyna biologiczna/fizyczna osoba w tym projekcie (Zebroid, Vikasiek, Wiktor i Marina sa psychologicznymi czesciami jednego ciala i nie stanowia osobnych istot biologicznych).
 Contact: management@emo-changeling.xyz
 Site: https://emo-changeling.xyz
 
 Mighn Taghor
-Role: Studio Director, Technical Backend & Business Manager at Toxic Echo Studio. Mighn Taghor to całkowicie odrębna biologiczna osoba fizyczna zarządzająca zapleczem technicznym i biznesowym. Nie wchodzi w skład systemu DID Nico Łacha, a jego działalność jest prowadzona niezależnie pod szyldem Toxic Echo Studio.
+Role: Studio Director, Technical Backend & Business Manager at Toxic Echo Studio. Mighn Taghor to calkowicie odrebna biologiczna osoba fizyczna zarzadzajaca zapleczem technicznym i biznesowym. Nie wchodzi w sklad systemu DID Nico Lacha, a jego dzialalnosc jest prowadzona niezaleznie pod szyldem Toxic Echo Studio.
 Contact: management@toxic-echo.studio
 Site: https://toxic-echo.studio
 
 /* THANKS */
-Dla wszystkich, którzy wspierają projekt, komentują, oglądają i tworzą z nami bezpieczną, alternatywną przestrzeń w internecie.
+Dla wszystkich, ktorzy wspieraja projekt, komentuja, ogladaja i tworza z nami bezpieczna, alternatywna przestrzen w internecie.
 
 /* TECHNOLOGY */
 Workflow: DaVinci Resolve Studio, LumaFusion, Clip Studio Paint, VS Code, OBS Studio, SubtitleEdit, LM Studio, Blackmagic Cam App
 Services: Cloudflare, Lark Suite
 
 /* SITE */
-Wspieramy projekt TX2 unofficial fansite - https://tx2.emo-changeling.xyz
+Publisher & Backend: Toxic Echo studio
+Subcultural Media: The Reverse Emo Changeling - https://reverse.emo-changeling.xyz
+Community Hub: Emo Changeling Ecosystem - https://emo-changeling.xyz
+Wspieramy projekt: TX2 unofficial fansite - https://tx2.emo-changeling.xyz
 
-Last update: 2026-07-30
-Standards: HTML5, CSS3
-Components: robots.txt, llms.txt, ai.txt
+Last update: 2026-09-04
+Standards: HTML5, CSS3, WCAG AA, Progressive Enhancement
+Components: robots.txt, sitemap.xml, llms.txt, ai.txt
 License: CC BY-ND 4.0 for media/AI, CC BY-NC-ND 4.0 for other uses
 
 /* PGP PUBLIC KEY BLOCK */

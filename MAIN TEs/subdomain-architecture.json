@@ -1,21 +1,39 @@
 {
   "domain": "toxic-echo.studio",
   "name": "Toxic Echo Studio",
-  "description": "Dział techniczny, management, montaż wideo i produkcja dla kultury alternatywnej / The Reverse Emo Changeling.",
+  "description": "Dział techniczny, management, inżynieria systemowa, montaż wideo i wydawnictwo dla kultury alternatywnej / The Reverse Emo Changeling.",
+  "version": "3.0.1",
   "roles": {
-    "backend": "Produkcja wideo, zarządzanie projektami (Lark Suite), administracja infrastruktury."
+    "backend": "Produkcja wideo, zarządzanie projektami (Lark Suite), administracja infrastruktury, wydawca czasopisma.",
+    "publishing": "Wydawca The Reverse Emo Changeling (https://reverse.emo-changeling.xyz) oraz portalu Emo Changeling (https://emo-changeling.xyz)."
   },
   "personnel": {
-    "technical_director": "Mighn Taghor (Founder, video editor & manager)"
+    "technical_director": "Mighn Taghor (Founder, studio director, video editor & manager)"
   },
   "architecture": {
     "apex": {
       "url": "https://toxic-echo.studio",
       "paths": {
         "/": {
-          "title": "Toxic Echo Studio",
+          "title": "Toxic Echo Studio (Language Selector)",
+          "description": "Neutralny root selektora językowego dla Toxic Echo Studio.",
+          "languages": [
+            "mul"
+          ]
+        },
+        "/pl/": {
+          "title": "Toxic Echo Studio (Polski)",
           "description": "Główna strona techniczna studia, specyfikacja techniczna i manifest.",
-          "languages": ["pl"]
+          "languages": [
+            "pl"
+          ]
+        },
+        "/en/": {
+          "title": "Toxic Echo Studio (English)",
+          "description": "Main technical studio page, project specification, and manifest in English.",
+          "languages": [
+            "en"
+          ]
         }
       }
     },
@@ -24,9 +42,25 @@
         "description": "Strona 'O nas' dla Toxic Echo Studio.",
         "paths": {
           "/": {
-            "title": "O nas - Toxic Echo Studio",
-            "description": "Informacje o założycielach, podziale obowiązków i profilu działalności.",
-            "languages": ["pl"]
+            "title": "O nas - Toxic Echo Studio (Language Selector)",
+            "description": "Bramka wyboru języka poddomeny O nas.",
+            "languages": [
+              "mul"
+            ]
+          },
+          "/pl/": {
+            "title": "O nas - Toxic Echo Studio (Polski)",
+            "description": "Informacje o założycielu, filozofii, podziale obowiązków i profilu działalności.",
+            "languages": [
+              "pl"
+            ]
+          },
+          "/en/": {
+            "title": "About Us - Toxic Echo Studio (English)",
+            "description": "Detailed background, philosophy, technical gear, and founder biography.",
+            "languages": [
+              "en"
+            ]
           }
         }
       },
@@ -43,5 +77,6 @@
         "type": "redirect"
       }
     }
-  }
+  },
+  "revision": "2026-09-04"
 }

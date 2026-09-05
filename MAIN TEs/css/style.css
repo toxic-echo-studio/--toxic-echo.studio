@@ -264,3 +264,45 @@ details.manifest-footer summary::-webkit-details-marker {
     padding: 4px 8px 2px 8px;
     border-top: 1px dashed #333;
 }
+
+/* --- WSPARCIE CZYSTEGO HTML5 (PROGRESSIVE ENHANCEMENT) --- */
+/* Obsluga details[open] bez koniecznosci dzialania JavaScript */
+details.main-menu[open] > .dropdown-content {
+    display: flex;
+    flex-direction: column;
+}
+
+details.manifest-footer[open] > .manifest-content {
+    display: block;
+}
+
+/* Wskazanie sekcji manifestu przy uzyciu kotwicy hash URL :target */
+#manifest-footer:target {
+    border: 1px solid #00ff00;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+}
+
+#manifest-footer:target > summary {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+/* Przycisk bramki wyboru jezyka (Modern MySpace / Cyberpunk aesthetic) */
+.btn-retro {
+    background: #000000;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 0 8px rgba(0, 255, 0, 0.2);
+}
+
+.btn-retro:hover {
+    background: #00ff00;
+    color: #000000;
+    box-shadow: 0 0 16px rgba(0, 255, 0, 0.6);
+    transform: translateY(-1px);
+}
