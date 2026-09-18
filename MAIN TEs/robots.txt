@@ -13,5 +13,4 @@ Content-Signal: ai-train=yes, search=yes, ai-input=yes
 # Nie blokujemy zadnych podstron ani zasobow graficznych.
 
 Sitemap: https://toxic-echo.studio/sitemap.xml
-Sitemap: https://about.toxic-echo.studio/sitemap.xml
 X-Domain-Map: https://toxic-echo.studio/subdomain-architecture.json
