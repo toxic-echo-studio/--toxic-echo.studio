@@ -71,6 +71,22 @@ h1 {
 .dropdown-content a {
     color: #c8ffc8;
     text-decoration: none;
+    padding: 8px 12px;
+    display: block;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: color 0.3s;
+}
+
+.dropdown-content a:hover {
+    color: #ff007f;
+}
+
+.dropdown-content a.menu-publishing-link {
+    margin-top: 12px;
+    margin-bottom: 8px;
+    border-top: 1px dashed rgba(0, 255, 0, 0.3);
+    padding-top: 10px;
 }
 
 h2 {
@@ -282,8 +298,17 @@ details.manifest-footer[open] > .manifest-content {
     transform: translateY(-1px);
 }
 
-.manifest-direct-link,
-a.manifest-direct-link {
+/* Kontener i odnośnik do wydawnictwa na stronie O nas */
+.manifest-publishing-wrapper {
+    margin-top: 20px;
+    margin-bottom: 55px; /* Wyraźnie powiększony odstęp od znajdującego się poniżej MIGHN TAGHOR */
+    text-align: center;
+}
+
+.manifest-publishing-wrapper .manifest-direct-link,
+a.manifest-direct-link,
+a.manifest-direct-link:link,
+a.manifest-direct-link:visited {
     font-size: 1rem;
     color: #00ff00;
     text-decoration: none;
@@ -292,11 +317,12 @@ a.manifest-direct-link {
     border-bottom: 1px dashed #00ff00;
     display: inline-block;
     padding-bottom: 5px;
-    transition: color 0.2s;
     cursor: pointer;
+    transition: text-shadow 0.2s, color 0.2s;
 }
 
-.manifest-direct-link:hover,
+.manifest-publishing-wrapper .manifest-direct-link:hover,
 a.manifest-direct-link:hover {
-    color: #ff007f;
+    color: #00ff00;
+    text-shadow: 0 0 8px #00ff00, 0 0 14px #00ff00;
 }
