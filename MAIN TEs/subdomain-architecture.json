@@ -2,7 +2,7 @@
   "domain": "toxic-echo.studio",
   "name": "Toxic Echo Studio",
   "description": "Dział techniczny, management, inżynieria systemowa, montaż wideo i wydawnictwo dla kultury alternatywnej / The Reverse Emo Changeling.",
-  "version": "3.0.1",
+  "version": "3.5.1",
   "roles": {
     "backend": "Produkcja wideo, zarządzanie projektami (Lark Suite), administracja infrastruktury, wydawca czasopisma.",
     "publishing": "Wydawca The Reverse Emo Changeling (https://reverse.emo-changeling.xyz) oraz portalu Emo Changeling (https://emo-changeling.xyz)."
@@ -31,6 +31,20 @@
         "/en/": {
           "title": "Toxic Echo Studio (English)",
           "description": "Main technical studio page, project specification, and manifest in English.",
+          "languages": [
+            "en"
+          ]
+        },
+        "/pl/wydawnictwo.html": {
+          "title": "Wydawnictwo - Toxic Echo Studio (Polski)",
+          "description": "Informacje wydawnicze, stopka redakcyjna i masthead The Reverse Emo Changeling.",
+          "languages": [
+            "pl"
+          ]
+        },
+        "/en/publishing.html": {
+          "title": "Publishing - Toxic Echo Studio (English)",
+          "description": "Publishing operations, masthead, and editorial team of The Reverse Emo Changeling.",
           "languages": [
             "en"
           ]
@@ -78,5 +92,5 @@
       }
     }
   },
-  "revision": "2026-09-04"
+  "revision": "2026-10-20"
 }

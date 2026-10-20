@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+    <!-- Wstępna detekcja preferencji językowej przed renderowaniem -->
+    <script>
+    (function() {
+        var s = null;
+        try {
+            var m = document.cookie.match(/(?:^|;\s*)site_lang=([^;]+)/);
+            if (m && m[1]) { s = m[1].toLowerCase(); }
+            else if (window.localStorage) { s = (localStorage.getItem('site_lang') || '').toLowerCase(); }
+        } catch(e) {}
+        if (!s) {
+            var l = (navigator.languages && navigator.languages[0]) || navigator.language || '';
+            if (l && !l.toLowerCase().startsWith('pl')) {
+                s = 'en';
+            } else {
+                s = 'pl';
+            }
+        }
+        if (s === 'en') {
+            document.documentElement.lang = 'en';
+        } else {
+            document.documentElement.lang = 'pl';
+        }
+    })();
+    </script>
+
+    <style>
+        /* Układ sekcji impressum */
+        .impressum-section {
+            margin-bottom: 40px;
+        }
+        .impressum-box-standalone {
+            background: #050505;
+            border: var(--border-pink);
+            padding: 25px;
+            box-shadow: var(--shadow-retro);
+            text-align: left;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            text-transform: none;
+            font-variant: normal;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .team-card {
+            background: #050505;
+            border: var(--border-pink);
+            box-shadow: var(--shadow-retro);
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .team-avatar {
+            width: 120px;
+            height: 120px;
+            border: 1px solid var(--color-primary-pink);
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .team-avatar-placeholder {
+            width: 120px;
+            height: 120px;
+            border: 1px solid var(--color-primary-pink);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--color-primary-green);
+            background: #111111;
+            flex-shrink: 0;
+        }
+        .team-info h3 {
+            margin: 0 0 5px;
+            text-align: left;
+            color: var(--color-text-white);
+            text-shadow: none;
+            font-size: 1.25rem;
+        }
+        .team-role {
+            font-size: 0.85rem;
+            color: var(--color-primary-green);
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .team-bio {
+            font-size: 0.85rem;
+            color: var(--color-article-text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+        }
+        .social-notice {
+            background: rgba(10, 16, 30, 0.85);
+            border-left: 3px solid var(--color-primary-green);
+            padding: 12px 16px;
+            margin-bottom: 25px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            color: var(--color-text-white);
+            font-family: 'Inter', sans-serif;
+        }
+        @media (max-width: 768px) {
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .team-info h3 {
+                text-align: center;
+            }
+        }
+        /* Domyślne sterowanie widocznością bloków językowych */
+        html:not([lang="en"]) .impressum-lang-block[data-lang="en"] {
+            display: none !important;
+        }
+        html[lang="en"] .impressum-lang-block[data-lang="pl"] {
+            display: none !important;
+        }
+    </style>
+<link rel="ai-catalog" type="application/json" href="/.well-known/ai-catalog.json"/>
+</head>
+
+<body>
+
+    <!-- Główny kontener treści -->
+    <main class="main-content" id="impressum-content-anchor">
+        <div class="article-wrapper" style="width: 90%; max-width: 1200px;">
+            
+            <!-- Widget przełączania języka -->
+            <div class="lang-switcher-widget notranslate" translate="no">
+                <a href="pl/impressum.html" class="lang-btn lang-btn-pl active" aria-current="page" hreflang="pl" lang="pl" onclick="switchLang('pl'); return false;">PL</a>
+                <span class="lang-sep">|</span>
+                <a href="en/impressum.html" class="lang-btn lang-btn-en" hreflang="en" lang="en" onclick="switchLang('en'); return false;">EN</a>
+            </div>
+
+            <!-- Blok języka polskiego (PL) -->
+
+                    <div class="impressum-box-standalone notranslate" translate="no">
+                        <h2 style="color: var(--color-primary-green); font-size: 1.4rem; margin-top: 0; margin-bottom: 10px; text-shadow: none;">Stopka Redakcyjna (Masthead)</h2>
+                        <p style="color: var(--color-text-purple); font-size: 1.05rem; font-weight: bold; margin-bottom: 15px;">The Reverse Emo Changeling &mdash; Nieregularnik społeczno-artystyczny</p>
+                        <hr style="border: 0; border-top: 1px dashed var(--color-primary-pink); margin-bottom: 20px;">
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; font-size: 0.9rem; line-height: 1.6; color: var(--color-article-text);">
+                            <div>
+                                <p><strong>Wydawca / Publisher:</strong><br>Bartosz Gala &mdash; Toxic Echo studio</p>
+                                <p><strong>Siedziba i adres redakcji:</strong><br>ul. Hetmana Stanisława Żółkiewskiego 9/4<br>31-539 Kraków, Polska</p>
+                                <p><strong>Kontakt z wydawcą:</strong><br><a href="mailto:publisher@toxic-echo.studio" style="color: var(--color-text-green);">publisher@toxic-echo.studio</a></p>
+                            </div>
+                            <div>
+                                <p><strong>Redaktor naczelny / Editor-in-Chief:</strong><br>Mighn Taghor (<a href="mailto:eic@emo-changeling.xyz" style="color: var(--color-text-green);">eic@emo-changeling.xyz</a>)</p>
+                                <p><strong>Dziennikarz prowadzący / Host:</strong><br>Nico Łach (<a href="mailto:nico.lach@emo-changeling.xyz" style="color: var(--color-text-green);">nico.lach@emo-changeling.xyz</a>)</p>
+                                <p><strong>Publicystyka subkulturowa:</strong><br>Mighn Taghor</p>
+                            </div>
+                            <div>
+                                <p><strong>Rejestracja prasowa:</strong><br>Sąd Okręgowy w Krakowie, Wydział I Cywilny<br>Rejestr dzienników i czasopism: <strong>I Ns Rej PR 3553</strong></p>
+                                <p><strong>Sprawy prawne i zapytania:</strong><br><a href="mailto:legal@emo-changeling.xyz" style="color: var(--color-text-green);">legal@emo-changeling.xyz</a></p>
+                                <p><strong>Zasady publikacji i regulamin:</strong><br><a href="pl/legal.html" style="color: var(--color-text-pink); text-decoration: underline;">Pełny regulamin / Legal</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Sekcja kluczowego zespołu redakcyjnego -->
+                <section class="impressum-section">
+                    <h2 style="border-bottom: 2px solid var(--color-primary-green); padding-bottom: 8px; margin-bottom: 20px; color: var(--color-primary-green);">Kluczowy Zespół Redakcyjny</h2>
+                    <div class="team-grid">
+                        
+                        <!-- Karta 1: Mighn Taghor -->
+                        <div class="team-card">
+                            <img src="img/mighn-taghor.jpg" alt="Mighn Taghor Avatar" class="team-avatar" width="966" height="1280">
+                            <div class="team-info">
+                                <h3 translate="no" class="notranslate">Mighn Taghor</h3>
+                                <div class="team-role">Editor-in-Chief / Publicist</div>
+                                <p class="team-bio">
+                                    Zajmuje się felietonami subkulturowymi i publicystycznymi, analizą sceny niezależnej oraz dbaniem o to, by słowo pisane miało odpowiedni ciężar i nie podlegało korporacyjnej dewaluacji.
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:eic@emo-changeling.xyz">eic@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mighn" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Mighn" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Karta 2: Nico Łach -->
+                        <div class="team-card">
+                            <img src="img/Nico_Lach_canonical_photo.jpg" alt="Nico Łach Avatar" class="team-avatar" width="1200" height="1200">
+                            <div class="team-info">
+                                <h3 class="notranslate" translate="no">Nico Łach</h3>
+                                <div class="team-role">Lead Journalist / Host / Art</div>
+                                <p class="team-bio">
+                                    Frontman i lider projektu, gospodarz wywiadów i koordynator graficzny. Łączy światy cyfrowego artu (Digiart, pigeonification project) z publicystyką i muzyczną subkulturą emo/scene. Znany pod pseudonimami artystycznymi "Zebroid" oraz "Vikasiek".
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:nico.lach@emo-changeling.xyz">nico.lach@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/nico-%C5%82ach/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Zebroid-Nico-Lach" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Karta 3: Bartosz Gala -->
+                        <div class="team-card">
+                            <img src="img/toxic-echo-studio.webp" alt="Bartosz Gala Avatar" class="team-avatar" width="1024" height="1024">
+                            <div class="team-info">
+                                <h3 class="notranslate" translate="no">Bartosz Gala</h3>
+                                <div class="team-role">Publisher / Toxic Echo Studio</div>
+                                <p class="team-bio">
+                                    Wydawca e-zina i koordynator techniczny. Odpowiada za finansowanie, infrastrukturę techniczną, bezpieczeństwo oraz wsparcie prawne całego projektu.
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:publisher@toxic-echo.studio">publisher@toxic-echo.studio</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/toxic-echo-studio" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/toxic-echo-studio" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+            <!-- Blok języka angielskiego (EN) -->
+
+                    <div class="impressum-box-standalone notranslate" translate="no">
+                        <h2 style="color: var(--color-primary-green); font-size: 1.4rem; margin-top: 0; margin-bottom: 10px; text-shadow: none;">Editorial Masthead</h2>
+                        <p style="color: var(--color-text-purple); font-size: 1.05rem; font-weight: bold; margin-bottom: 15px;">The Reverse Emo Changeling &mdash; Nieregularnik społeczno-artystyczny</p>
+                        <hr style="border: 0; border-top: 1px dashed var(--color-primary-pink); margin-bottom: 20px;">
+                        
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; font-size: 0.9rem; line-height: 1.6; color: var(--color-article-text);">
+                            <div>
+                                <p><strong>Wydawca / Publisher:</strong><br>Bartosz Gala &mdash; Toxic Echo studio</p>
+                                <p><strong>Siedziba i adres redakcji / Address:</strong><br>ul. Hetmana Stanisława Żółkiewskiego 9/4<br>31-539 Kraków, Poland</p>
+                                <p><strong>Publisher Contact:</strong><br><a href="mailto:publisher@toxic-echo.studio" style="color: var(--color-text-green);">publisher@toxic-echo.studio</a></p>
+                            </div>
+                            <div>
+                                <p><strong>Redaktor naczelny / Editor-in-Chief:</strong><br>Mighn Taghor (<a href="mailto:eic@emo-changeling.xyz" style="color: var(--color-text-green);">eic@emo-changeling.xyz</a>)</p>
+                                <p><strong>Dziennikarz prowadzący / Host:</strong><br>Nico Łach (<a href="mailto:nico.lach@emo-changeling.xyz" style="color: var(--color-text-green);">nico.lach@emo-changeling.xyz</a>)</p>
+                                <p><strong>Subcultural Essays:</strong><br>Mighn Taghor</p>
+                            </div>
+                            <div>
+                                <p><strong>Rejestracja prasowa / Press Registry:</strong><br>District Court in Krakow, 1st Civil Division<br>Register of journals and magazines: <strong>I Ns Rej PR 3553</strong></p>
+                                <p><strong>Legal &amp; Press Inquiries:</strong><br><a href="mailto:legal@emo-changeling.xyz" style="color: var(--color-text-green);">legal@emo-changeling.xyz</a></p>
+                                <p><strong>Editorial Policies &amp; Terms:</strong><br><a href="en/legal.html" style="color: var(--color-text-pink); text-decoration: underline;">Full Terms / Legal</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Core Editorial Team section -->
+                <section class="impressum-section">
+                    <h2 style="border-bottom: 2px solid var(--color-primary-green); padding-bottom: 8px; margin-bottom: 20px; color: var(--color-primary-green);">Core Editorial Team</h2>
+                    <div class="team-grid">
+                        
+                        <!-- Card 1: Mighn Taghor -->
+                        <div class="team-card">
+                            <img src="img/mighn-taghor.jpg" alt="Mighn Taghor Avatar" class="team-avatar" width="966" height="1280">
+                            <div class="team-info">
+                                <h3 translate="no" class="notranslate">Mighn Taghor</h3>
+                                <div class="team-role">Editor-in-Chief / Publicist</div>
+                                <p class="team-bio">
+                                    Focuses on subcultural and journalistic essays, analysis of the independent scene, and ensuring the written word carries true weight and is not subject to corporate devaluation.
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:eic@emo-changeling.xyz">eic@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mighn" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Mighn" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Nico Łach -->
+                        <div class="team-card">
+                            <img src="img/Nico_Lach_canonical_photo.jpg" alt="Nico Łach Avatar" class="team-avatar" width="1200" height="1200">
+                            <div class="team-info">
+                                <h3 class="notranslate" translate="no">Nico Łach</h3>
+                                <div class="team-role">Lead Journalist / Host / Art</div>
+                                <p class="team-bio">
+                                    Frontman and project leader, interview host, and art coordinator. Bridges digital art (Digiart, pigeonification project) with journalism and the emo/scene music subculture. Known under the artistic pseudonyms "Zebroid" and "Vikasiek".
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:nico.lach@emo-changeling.xyz">nico.lach@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/nico-%C5%82ach/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Zebroid-Nico-Lach" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Bartosz Gala -->
+                        <div class="team-card">
+                            <img src="img/toxic-echo-studio.webp" alt="Bartosz Gala Avatar" class="team-avatar" width="1024" height="1024">
+                            <div class="team-info">
+                                <h3 class="notranslate" translate="no">Bartosz Gala</h3>
+                                <div class="team-role">Publisher / Toxic Echo Studio</div>
+                                <p class="team-bio">
+                                    E-zine publisher and technical coordinator. Responsible for funding, technical infrastructure, security, and legal backing for the entire project.
+                                </p>
+                                <p style="margin: 5px 0 0; font-size: 0.8rem; color: var(--color-text-purple);" class="notranslate" translate="no">
+                                    Contact: <a href="mailto:publisher@toxic-echo.studio">publisher@toxic-echo.studio</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/toxic-echo-studio" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/toxic-echo-studio" target="_blank" rel="noopener">GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Main Footer -->
+    <footer class="main-footer">
+        <div class="footer-branding">
+            <p class="branding-title notranslate" translate="no">The Reverse Emo Changeling</p>
+            <p class="branding-studio notranslate" translate="no">Toxic Echo studio</p>
+        </div>
+        
+        <div class="footer-nav footer-nav-pl">
+            <a href="pl/team.html" class="footer-link">zespół</a>
+            <span class="footer-separator">--</span>
+            <a href="impressum.html" class="footer-link">impressum</a>
+            <span class="footer-separator">--</span>
+            <a href="pl/legal.html" class="footer-link">regulamin</a>
+        </div>
+
+        <div class="footer-nav footer-nav-en" style="display: none;">
+            <a href="en/team.html" class="footer-link">team</a>
+            <span class="footer-separator">--</span>
+            <a href="impressum.html" class="footer-link">impressum</a>
+            <span class="footer-separator">--</span>
+            <a href="en/legal.html" class="footer-link">legal</a>
+        </div>
+    </footer>
+
+ </body>
+</html>

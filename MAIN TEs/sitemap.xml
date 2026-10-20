@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://toxic-echo.studio/</loc>
-<lastmod>2026-09-04</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://toxic-echo.studio/" hreflang="x-default" rel="alternate"/>
@@ -11,7 +11,7 @@
 </url>
 <url>
 <loc>https://toxic-echo.studio/pl/</loc>
-<lastmod>2026-09-04</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
@@ -19,7 +19,7 @@
 <xhtml:link href="https://toxic-echo.studio/pl/" hreflang="x-default" rel="alternate"/></url>
 <url>
 <loc>https://toxic-echo.studio/en/</loc>
-<lastmod>2026-09-04</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
@@ -27,7 +27,7 @@
 <xhtml:link href="https://toxic-echo.studio/pl/" hreflang="x-default" rel="alternate"/></url>
 <url>
 <loc>https://about.toxic-echo.studio/</loc>
-<lastmod>2026-09-26</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://about.toxic-echo.studio/" hreflang="x-default" rel="alternate"/>
@@ -36,7 +36,7 @@
 </url>
 <url>
 <loc>https://about.toxic-echo.studio/pl/</loc>
-<lastmod>2026-09-26</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
@@ -44,10 +44,24 @@
 <xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="x-default" rel="alternate"/></url>
 <url>
 <loc>https://about.toxic-echo.studio/en/</loc>
-<lastmod>2026-09-05</lastmod>
+<lastmod>2026-10-20</lastmod>
 
 
 <xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
 <xhtml:link href="https://about.toxic-echo.studio/en/" hreflang="en" rel="alternate"/>
 <xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="x-default" rel="alternate"/></url>
+<url>
+<loc>https://toxic-echo.studio/pl/wydawnictwo.html</loc>
+<lastmod>2026-10-20</lastmod>
+<xhtml:link href="https://toxic-echo.studio/pl/wydawnictwo.html" hreflang="pl" rel="alternate"/>
+<xhtml:link href="https://toxic-echo.studio/en/publishing.html" hreflang="en" rel="alternate"/>
+<xhtml:link href="https://toxic-echo.studio/pl/wydawnictwo.html" hreflang="x-default" rel="alternate"/>
+</url>
+<url>
+<loc>https://toxic-echo.studio/en/publishing.html</loc>
+<lastmod>2026-10-20</lastmod>
+<xhtml:link href="https://toxic-echo.studio/pl/wydawnictwo.html" hreflang="pl" rel="alternate"/>
+<xhtml:link href="https://toxic-echo.studio/en/publishing.html" hreflang="en" rel="alternate"/>
+<xhtml:link href="https://toxic-echo.studio/pl/wydawnictwo.html" hreflang="x-default" rel="alternate"/>
+</url>
 </urlset>

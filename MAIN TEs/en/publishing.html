@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-version="3.5.1" data-build="20261020" data-system="Toxic Echo Studio">
+<head>
+    <!-- Character encoding and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+
+    <!-- Preload key resources -->
+    <link rel="preload" as="image" href="../img/bannerM1.webp" fetchpriority="high">
+    <link rel="preconnect" href="https://emo-changeling.xyz" crossorigin>
+    <link rel="preconnect" href="https://reverse.emo-changeling.xyz" crossorigin>
+    <link rel="preload" href="../css/style.css" as="style">
+
+    <meta name="theme-color" content="#000000">
+
+    <!-- Canonical URL and mutual hreflang tags -->
+    <link rel="canonical" href="https://toxic-echo.studio/en/publishing.html">
+    <link rel="alternate" hreflang="pl" href="https://toxic-echo.studio/pl/wydawnictwo.html">
+    <link rel="alternate" hreflang="en" href="https://toxic-echo.studio/en/publishing.html">
+
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM System Instructions">
+    <link rel="author" type="text/plain" href="/humans.txt" title="Humans">
+
+    <!-- Metadata description and authorship -->
+    <meta name="description" content="Publishing branch of Toxic Echo studio. Publisher of the multimodal socio-artistic periodical The Reverse Emo Changeling, editorial masthead, and team details.">
+    <meta name="keywords" content="Toxic Echo studio, publishing house, The Reverse Emo Changeling, masthead, press registry, magazine, Mighn Taghor, Nico Łach, Bartosz Gala">
+    <meta name="author" content="Mighn Taghor - Toxic Echo Studio">
+    <meta name="version" content="3.5.1">
+    <meta name="revision-date" content="2026-10-20">
+
+    <title>Publishing | Toxic Echo studio</title>
+    <meta name="application-name" content="Toxic Echo studio">
+    <meta name="msapplication-TileImage" content="/web-app-manifest-192x192.png">
+    <meta name="msapplication-TileColor" content="#000000">
+
+    <!-- Site icons -->
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="32x32">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" href="/favicon.ico" sizes="48x48">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Open Graph & Twitter Card -->
+    <meta property="og:title" content="Publishing | Toxic Echo studio">
+    <meta property="og:site_name" content="Toxic Echo studio">
+    <meta property="og:description" content="Publishing activity of Toxic Echo studio - publisher of The Reverse Emo Changeling. Press info, masthead, and editorial team.">
+    <meta property="og:image" content="https://toxic-echo.studio/img/bannerM1.webp">
+    <meta property="og:url" content="https://toxic-echo.studio/en/publishing.html">
+    <meta property="og:type" content="website">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Publishing | Toxic Echo studio">
+    <meta name="twitter:description" content="Publisher of The Reverse Emo Changeling magazine. Editorial masthead and team.">
+    <meta name="twitter:image" content="https://toxic-echo.studio/img/bannerM1.webp">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        /* Układ sekcji wydawnictwa i mastheadu */
+        .lead-info-box {
+            background: #050505;
+            border: 1px solid #00ff00;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+            padding: 25px;
+            max-width: 900px;
+            margin: 20px auto 30px auto;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .lead-info-box p {
+            font-size: 1.15rem;
+            color: #e0e0e0;
+            line-height: 1.6;
+            margin: 0;
+        }
+        .lead-info-box a {
+            color: #00ff00;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        .lead-info-box a:hover {
+            color: #ff007f;
+        }
+        .impressum-section {
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 950px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .impressum-box-standalone {
+            background: #050505;
+            border: 1px solid #ff007f;
+            padding: 25px;
+            box-shadow: 0 0 12px rgba(255, 0, 127, 0.25);
+            text-align: left;
+            font-family: 'Courier New', Courier, monospace;
+            box-sizing: border-box;
+            width: 100%;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .team-card {
+            background: #050505;
+            border: 1px solid #ff007f;
+            box-shadow: 0 0 10px rgba(255, 0, 127, 0.2);
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .team-avatar {
+            width: 110px;
+            height: 110px;
+            border: 1px solid #ff007f;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .team-info h3 {
+            margin: 0 0 5px;
+            text-align: left;
+            color: #ffffff;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+        }
+        .team-role {
+            font-size: 0.85rem;
+            color: #00ff00;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+        .team-bio {
+            font-size: 0.85rem;
+            color: #d0d0d0;
+            line-height: 1.45;
+            margin: 0;
+        }
+        .team-links {
+            margin: 8px 0 0;
+            font-size: 0.8rem;
+            color: #a080ff;
+        }
+        .team-links a {
+            color: #00ff00;
+            text-decoration: none;
+        }
+        .team-links a:hover {
+            color: #ff007f;
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .team-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .team-info h3 {
+                text-align: center;
+            }
+        }
+    
+    </style>
+
+    <!-- Schema.org Entity Authority Graph -->
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://toxic-echo.studio/en/publishing.html#webpage",
+      "url": "https://toxic-echo.studio/en/publishing.html",
+      "name": "Publishing - Toxic Echo studio",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://toxic-echo.studio/#website"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://toxic-echo.studio/#org",
+      "name": "Toxic Echo studio",
+      "legalName": "Toxic Echo studio - Bartosz Gala",
+      "url": "https://toxic-echo.studio/",
+      "identifier": "SO w Krakowie I Ns Rej PR 3553",
+      "publishes": [
+        {
+          "@type": ["Periodical", "WebSite"],
+          "@id": "https://reverse.emo-changeling.xyz/#periodical",
+          "name": "The Reverse Emo Changeling",
+          "url": "https://reverse.emo-changeling.xyz/"
+        }
+      ]
+    }
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <!-- Main studio banner -->
+    <header class="main-header notranslate" translate="no">
+        <div class="banner-container">
+            <a href="index.html">
+                <img src="../img/bannerM1.webp" width="1920" height="1080" fetchpriority="high" alt="Toxic Echo studio banner" class="banner">
+            </a>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main class="main-content">
+        <h1 class="notranslate" translate="no">Toxic Echo studio</h1>
+
+        <h2>Publishing Operations</h2>
+
+        <!-- Main Navigation Menu (Pure HTML5 without JS) -->
+        <details class="main-menu notranslate" translate="no">
+            <summary>MENU</summary>
+            <nav class="dropdown-content">
+                <a href="https://about.toxic-echo.studio/en/">About Us</a>
+                <a href="publishing.html">Publishing</a>
+                <a href="index.html#manifest-footer">Manifesto :/info</a>
+                <a href="index.html">Home Page</a>
+                <span class="menu-category">Language / Język</span>
+                <a href="../pl/wydawnictwo.html" hreflang="pl" lang="pl">&raquo; Polski (PL)</a>
+                <span class="menu-category">We Support</span>
+                <a href="https://tx2.emo-changeling.xyz" target="_blank" rel="noopener">TX2 UNOFFICIAL</a>
+            </nav>
+        </details>
+
+        <!-- Lead publisher status note -->
+        <div class="lead-info-box">
+            <p>
+                Toxic Echo studio is the publisher of the multimodal socio-artistic irregular periodical
+                <a href="https://reverse.emo-changeling.xyz" target="_blank" rel="noopener">The Reverse Emo Changeling</a>.
+            </p>
+        </div>
+
+        <!-- Editorial Masthead Section -->
+        <section class="impressum-section">
+            <div class="impressum-box-standalone notranslate" translate="no">
+                <h2 style="color: #00ff00; font-size: 1.3rem; margin-top: 0; margin-bottom: 10px; text-shadow: none; border: none; text-align: left;">Editorial Masthead</h2>
+                <p style="color: #ff007f; font-size: 1.05rem; font-weight: bold; margin-bottom: 15px;">The Reverse Emo Changeling - Nieregularnik społeczno-artystyczny</p>
+                <hr style="border: 0; border-top: 1px dashed #ff007f; margin-bottom: 20px;">
+                
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; font-size: 0.9rem; line-height: 1.6; color: #d0d0d0;">
+                    <div>
+                        <p><strong>Wydawca / Publisher:</strong><br>Bartosz Gala - Toxic Echo studio</p>
+                        <p><strong>Siedziba i adres redakcji / Address:</strong><br>ul. Hetmana Stanisława Żółkiewskiego 9/4<br>31-539 Kraków, Poland</p>
+                        <p><strong>Publisher Contact:</strong><br><a href="mailto:publisher@toxic-echo.studio" style="color: #00ff00;">publisher@toxic-echo.studio</a></p>
+                    </div>
+                    <div>
+                        <p><strong>Redaktor naczelny / Editor-in-Chief:</strong><br>Mighn Taghor (<a href="mailto:eic@emo-changeling.xyz" style="color: #00ff00;">eic@emo-changeling.xyz</a>)</p>
+                        <p><strong>Dziennikarz prowadzący / Host:</strong><br>Nico Łach (<a href="mailto:nico.lach@emo-changeling.xyz" style="color: #00ff00;">nico.lach@emo-changeling.xyz</a>)</p>
+                        <p><strong>Subcultural Essays:</strong><br>Mighn Taghor</p>
+                    </div>
+                    <div>
+                        <p><strong>Rejestracja prasowa / Press Registry:</strong><br>District Court in Krakow, 1st Civil Division<br>Register of journals and magazines: <strong>I Ns Rej PR 3553</strong></p>
+                        <p><strong>Legal &amp; Press Inquiries:</strong><br><a href="mailto:legal@emo-changeling.xyz" style="color: #00ff00;">legal@emo-changeling.xyz</a></p>
+                        <p><strong>Editorial Policies &amp; Terms:</strong><br><a href="https://reverse.emo-changeling.xyz/en/legal.html" target="_blank" rel="noopener" style="color: #ff007f; text-decoration: underline;">Full Terms / Legal</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Editorial Team section -->
+        <section class="impressum-section">
+            <h2 style="border-bottom: 2px solid #00ff00; padding-bottom: 8px; margin-bottom: 20px; color: #00ff00; text-align: left;">Core Editorial Team</h2>
+            <div class="team-grid">
+                
+                <!-- Card 1: Mighn Taghor -->
+                <div class="team-card">
+                    <img src="../img/mighn-taghor.jpg" alt="Mighn Taghor Avatar" class="team-avatar" width="110" height="110">
+                    <div class="team-info">
+                        <h3 translate="no" class="notranslate">Mighn Taghor</h3>
+                        <div class="team-role">Editor-in-Chief / Publicist</div>
+                        <p class="team-bio">
+                            Focuses on subcultural and journalistic essays, analysis of the independent scene, and ensuring the written word carries true weight and is not subject to corporate devaluation.
+                        </p>
+                        <p class="team-links notranslate" translate="no">
+                            Contact: <a href="mailto:eic@emo-changeling.xyz">eic@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/mighn" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Mighn" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2: Nico Łach -->
+                <div class="team-card">
+                    <img src="../img/Nico_Lach_canonical_photo.jpg" alt="Nico Łach Avatar" class="team-avatar" width="110" height="110">
+                    <div class="team-info">
+                        <h3 class="notranslate" translate="no">Nico Łach</h3>
+                        <div class="team-role">Lead Journalist / Host / Art</div>
+                        <p class="team-bio">
+                            Frontman and project leader, interview host, and art coordinator. Bridges digital art (Digiart, pigeonification project) with journalism and the emo/scene music subculture. Known under the artistic pseudonyms "Zebroid" and "Vikasiek".
+                        </p>
+                        <p class="team-links notranslate" translate="no">
+                            Contact: <a href="mailto:nico.lach@emo-changeling.xyz">nico.lach@emo-changeling.xyz</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/nico-%C5%82ach/" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/Zebroid-Nico-Lach" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 3: Bartosz Gala -->
+                <div class="team-card">
+                    <img src="../img/toxic-echo-studio.webp" alt="Bartosz Gala Avatar" class="team-avatar" width="110" height="110">
+                    <div class="team-info">
+                        <h3 class="notranslate" translate="no">Bartosz Gala</h3>
+                        <div class="team-role">Publisher / Toxic Echo Studio</div>
+                        <p class="team-bio">
+                            E-zine publisher and technical coordinator. Responsible for funding, technical infrastructure, security, and legal backing for the entire project.
+                        </p>
+                        <p class="team-links notranslate" translate="no">
+                            Contact: <a href="mailto:publisher@toxic-echo.studio">publisher@toxic-echo.studio</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/company/toxic-echo-studio" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="https://github.com/toxic-echo-studio" target="_blank" rel="noopener">GitHub</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Social links -->
+        <div class="social-container notranslate" translate="no">
+            <a href="https://tt.toxic-echo.studio" rel="me" aria-label="TikTok">
+                <img src="../img/tiktok_link.svg" loading="lazy" width="48" height="48" alt="TikTok" class="social-icon">
+            </a>
+            <a href="https://yt.toxic-echo.studio" rel="me" aria-label="YouTube">
+                <img src="../img/YouTube_link.svg" loading="lazy" width="48" height="48" alt="YouTube" class="social-icon">
+            </a>
+            <a href="https://emo-changeling.xyz" rel="me" aria-label="Emo Changeling">
+                <img src="../img/EmoChangeling.svg" loading="lazy" width="48" height="48" alt="Emo-Changeling" class="social-icon">
+            </a>
+            <a href="https://www.behance.net/mighntaghor" rel="me" aria-label="Behance">
+                <img src="../img/Behance.svg" loading="lazy" width="48" height="48" alt="Behance" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com/company/toxic-echo-studio" rel="me" aria-label="LinkedIn">
+                <img src="../img/LinkedIn.svg" loading="lazy" width="48" height="48" alt="LinkedIn" class="social-icon">
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:publisher@toxic-echo.studio" class="email-line">publisher@toxic-echo.studio</a>
+    </footer>
+
+</body>
+</html>

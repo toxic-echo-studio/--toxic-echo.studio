@@ -34,6 +34,8 @@
 - **Strona O nas:** https://about.toxic-echo.studio/
 - **Strona The Reverse Emo Changeling (Portal):** https://emo-changeling.xyz/
 - **Czasopismo The Reverse Emo Changeling (Magazyn):** https://reverse.emo-changeling.xyz/
+- **Podstrona Wydawnictwo (PL):** https://toxic-echo.studio/pl/wydawnictwo.html
+- **Podstrona Publishing (EN):** https://toxic-echo.studio/en/publishing.html
 - **Wspieramy:** TX2 unofficial fansite - https://tx2.emo-changeling.xyz/
 - **Kontakt biznesowy:** management@toxic-echo.studio
 - **Archiwum wideo:** https://yt.toxic-echo.studio/
@@ -49,6 +51,6 @@
 - **SEO & AI SEO:** Zoptymalizowane JSON-LD (Schema.org), pełna struktura rel="alternate" i hreflang, sitemap.xml.
 
 ## UPDATE LOG
-- **last llms.txt update:** 2026-09-04
-- **last website update:** 2026-09-04
-- **version:** 3.0.1
+- **last llms.txt update:** 2026-10-20
+- **last website update:** 2026-10-20
+- **version:** 3.5.1
