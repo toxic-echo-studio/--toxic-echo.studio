@@ -281,3 +281,22 @@ details.manifest-footer[open] > .manifest-content {
     box-shadow: 0 0 16px rgba(0, 255, 0, 0.6);
     transform: translateY(-1px);
 }
+
+.manifest-direct-link,
+a.manifest-direct-link {
+    font-size: 1rem;
+    color: #00ff00;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 1px dashed #00ff00;
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.2s;
+    cursor: pointer;
+}
+
+.manifest-direct-link:hover,
+a.manifest-direct-link:hover {
+    color: #ff007f;
+}
