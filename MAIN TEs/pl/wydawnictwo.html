@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Preload kluczowych zasobow -->
-    <link rel="preload" as="image" href="../img/bannerM1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../img/TEsLogo.webp" fetchpriority="high">
     <link rel="preconnect" href="https://emo-changeling.xyz" crossorigin>
     <link rel="preconnect" href="https://reverse.emo-changeling.xyz" crossorigin>
     <link rel="preload" href="../css/style.css" as="style">
@@ -209,35 +209,36 @@
 </head>
 <body>
 
-    <!-- Glowny baner studia -->
+    <!-- Glowny naglowek studia -->
     <header class="main-header notranslate" translate="no">
-        <div class="banner-container">
-            <a href="index.html">
-                <img src="../img/bannerM1.webp" width="1920" height="1080" fetchpriority="high" alt="Toxic Echo studio banner" class="banner">
+        <nav class="top-lang-switch notranslate" translate="no" aria-label="Wybór języka">
+            <span class="lang-btn active">PL</span>
+            <span class="lang-sep">|</span>
+            <a href="../en/publishing.html" class="lang-btn" hreflang="en" lang="en">EN</a>
+        </nav>
+        <div class="brand-container">
+            <a href="index.html" class="brand-logo-link" aria-label="Toxic Echo studio">
+                <img src="../img/TEsLogo.webp" width="130" height="130" alt="Toxic Echo studio logo" class="brand-logo" fetchpriority="high">
             </a>
+            <h1 class="brand-title">
+                <span class="title-line-1">Toxic Echo</span>
+                <span class="title-line-2">studio</span>
+            </h1>
         </div>
     </header>
 
     <!-- Glowna zawartosc strony -->
     <main class="main-content">
-        <h1 class="notranslate" translate="no">Toxic Echo studio</h1>
-
         <h2>Działalność Wydawnicza</h2>
 
-        <!-- Menu glowne nawigacji (Czysty HTML5 bez JS) -->
-        <details class="main-menu notranslate" translate="no">
-            <summary>MENU</summary>
-            <nav class="dropdown-content">
-                <a href="https://about.toxic-echo.studio/pl/">O nas</a>
-                <a href="wydawnictwo.html">Wydawnictwo</a>
-                <a href="index.html#manifest-footer">Manifest :/info</a>
-                <a href="index.html">Strona główna</a>
-                <span class="menu-category">Język / Language</span>
-                <a href="../en/publishing.html" hreflang="en" lang="en">&raquo; English (EN)</a>
-                <span class="menu-category">Wspieramy</span>
-                <a href="https://tx2.emo-changeling.xyz" target="_blank" rel="noopener">TX2 UNOFFICIAL</a>
-            </nav>
-        </details>
+        <!-- Pasek nawigacyjny (Pure CSS bez JS) -->
+        <nav class="nav-bar notranslate" translate="no" aria-label="Nawigacja główna">
+            <a href="index.html" class="nav-link">Strona główna</a>
+            <a href="https://about.toxic-echo.studio/pl/" class="nav-link">O nas</a>
+            <a href="wydawnictwo.html" class="nav-link active">Wydawnictwo</a>
+            <a href="index.html#manifest-footer" class="nav-link">Manifest :/info</a>
+            <a href="https://tx2.emo-changeling.xyz" class="nav-link" target="_blank" rel="noopener sponsored">TX2 UNOFFICIAL</a>
+        </nav>
 
         <!-- Glowna informacja o statusie wydawcy -->
         <div class="lead-info-box">

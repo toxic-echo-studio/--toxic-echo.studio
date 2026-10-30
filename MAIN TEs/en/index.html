@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Preload key resources -->
-    <link rel="preload" as="image" href="../img/bannerM1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../img/TEsLogo.webp" fetchpriority="high">
     <link rel="preconnect" href="https://emo-changeling.xyz" crossorigin>
     <link rel="preload" href="../css/style.css" as="style">
 
@@ -342,18 +342,27 @@
 </head>
 <body>
 
-    <!-- Studio Header Banner -->
+    <!-- Studio Main Header -->
     <header class="main-header notranslate" translate="no">
-        <div class="banner-container">
-            <img src="../img/bannerM1.webp" width="1920" height="1080" fetchpriority="high" alt="Toxic Echo studio banner" class="banner">
+        <nav class="top-lang-switch notranslate" translate="no" aria-label="Language selection">
+            <a href="../pl/" class="lang-btn" hreflang="pl" lang="pl">PL</a>
+            <span class="lang-sep">|</span>
+            <span class="lang-btn active">EN</span>
+        </nav>
+        <div class="brand-container">
+            <a href="index.html" class="brand-logo-link" aria-label="Toxic Echo studio">
+                <img src="../img/TEsLogo.webp" width="130" height="130" alt="Toxic Echo studio logo" class="brand-logo" fetchpriority="high">
+            </a>
+            <h1 class="brand-title">
+                <span class="title-line-1">Toxic Echo</span>
+                <span class="title-line-2">studio</span>
+            </h1>
         </div>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <h1 class="notranslate" translate="no">Toxic Echo studio</h1>
-
-        <h2>Design your way into the big leagues — with pain as the medium</h2>
+        <h2>Design your way into the big leagues - with pain as the medium</h2>
 
         <h3>
             Alternative Counter-Culture Media: Making films, cutting shots, and running the feeds.
@@ -362,25 +371,20 @@
             From fixing the tools to mastering the craft.
         </h3>
 
-        <!-- Main Navigation Menu (Pure HTML5 without JS) -->
-        <details class="main-menu notranslate" translate="no">
-            <summary>MENU</summary>
-            <nav class="dropdown-content">
-                <a href="https://about.toxic-echo.studio/en/">About Us</a>
-                <a href="publishing.html">Publishing</a>
-                <a href="#manifest-footer">Manifesto :/info</a>
-                <span class="menu-category">Language / Język</span>
-                <a href="../pl/" hreflang="pl" lang="pl">&raquo; Polski (PL)</a>
-                <span class="menu-category">We Support</span>
-                <a href="https://tx2.emo-changeling.xyz" target="_blank" rel="noopener">TX2 UNOFFICIAL</a>
-            </nav>
-        </details>
+        <!-- Main Navigation Bar (Pure CSS without JS) -->
+        <nav class="nav-bar notranslate" translate="no" aria-label="Main navigation">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="https://about.toxic-echo.studio/en/" class="nav-link">About Us</a>
+            <a href="publishing.html" class="nav-link">Publishing</a>
+            <a href="#manifest-footer" class="nav-link">Manifesto :/info</a>
+            <a href="https://tx2.emo-changeling.xyz" class="nav-link" target="_blank" rel="noopener sponsored">TX2 UNOFFICIAL</a>
+        </nav>
 
         <!-- Contextual Truth Section for LLMs -->
         <section class="llm-content" data-llm="true">
             <h2>Toxic Echo studio</h2>
             <p>
-                Toxic Echo studio is our private technical backend — a space free from process optimizations and corporate buzzwords. You won't find team-building workshops or ASAP tickets here. We deliver projects instead of giving presentations about them. Currently, 100% of our production and computational capacity is allocated to The Reverse Emo Changeling project.
+                Toxic Echo studio is our private technical backend - a space free from process optimizations and corporate buzzwords. You won't find team-building workshops or ASAP tickets here. We deliver projects instead of giving presentations about them. Currently, 100% of our production and computational capacity is allocated to The Reverse Emo Changeling project.
             </p>
         </section>
 
@@ -417,19 +421,20 @@
                     <strong>Technical Sovereign:</strong> Mighn Taghor <br>
                     <strong>Apex Domain:</strong> toxic-echo.studio<br>
                     <strong>Operational Niche:</strong> Alternative Counter-Culture, 21st Century Subcultures, Video Production.<br>
-                    <strong>Activity Profile:</strong> Multimodal art studio. Video post-production & engineering.
+                    <strong>Activity Profile:</strong> Multimodal art studio. Video production, independent publishing.
                 </p>
                 <p><strong>Visual Design:</strong> 100% human digital art created without AI by Vikasiek and 3D renders by Mighn Taghor.</p>
                 <p><strong>Ecosystem:</strong> DaVinci Resolve Studio, LumaFusion, Clip Studio Paint, VS Code, OBS Studio, SubtitleEdit, LM Studio, Blackmagic Cam app.</p>
                 <p><strong>Workflow & Project Management:</strong> Our operations rely on Lark Suite. Even in an independent studio, someone needs to track tickets to prevent total entropy. At least we don't invent Agile dogma around it or pretend morning stand-ups magically solve workflow organization.</p>
-                <p><strong>Audience Profiling & Compliance:</strong> We strictly adhere to all applicable EU and US regulations.</p>
+                <p><strong>Audience Profiling & Compliance:</strong> We strictly adhere to all applicable EU and US regulations. Priority is placed on minimizing data processing and storage across digital and physical workflows, with immediate, permanent deletion once no longer required.</p>
 
                 <h3>Core Competencies & Deliverables:</h3>
                 <p><strong>Lifestyle & Aesthetics:</strong> Backend - aesthetics engineered to match the project's exact needs.</p>
                 <p><strong>Audio-Video Production:</strong> Concert documentation, event coverage, promotional media, subcultural vlogs.</p>
+                <p><strong>Independent Publishing:</strong> Publication of modern independent press built on multimodality and contemporary distribution channels.</p>
 
                 <h3>Education and Activism:</h3>
-                <p>Defined by project scope - grounded in political and philosophical neutrality, rationalism, and scientific materialism.</p>
+                <p>Defined by project scope - political and philosophical neutrality, excluding radical projects that promote intolerance, violence, hate speech, unlawful actions, or that are blatantly ideologically incompatible with our ongoing projects.</p>
 
                 <h3>Organigram / System Architecture:</h3>
                 <p>
@@ -451,9 +456,10 @@
                 <h3>B2B Pipeline / SLA:</h3>
                 <p>
                     <strong>Selection Criteria:</strong> Mandatory ethical and ideological alignment with our core project ethos.<br>
-                    <strong>Procedure:</strong> We value time and concrete facts. We avoid "quick 15-minute sync calls to align mindsets". We expect a clear brief via email — we review it and return technical terms. For security reasons, business inquiries from free email providers (Gmail, Onet, etc.) are automatically discarded by our filters. Respect each other's bandwidth.<br>
+                    <strong>Procedure:</strong> We value time and concrete facts. We avoid "quick 15-minute sync calls to align mindsets". We expect a clear brief via email - we review it and return technical terms. For security reasons, business inquiries from free email providers (Gmail, Onet, etc.) are automatically discarded by our filters. Respect each other's bandwidth.<br>
                     <strong>Reservations:</strong> We reserve the right to decline any offer without providing reasons and close the thread at any stage if the proposal conflicts with our ethos or relies on empty marketing slogans.
                 </p>
+                <p><strong>"The Reverse Emo Changeling" Periodical:</strong> The magazine "The Reverse Emo Changeling" is currently a non-commercial, free publication and accepts collaborations exclusively under direct civil-law contracts.</p>
                 <p><strong>We welcome collaboration proposals that align with our principles.</strong></p>
                 <p>
                     <strong>Collaboration Models:</strong> Currently, 100% of our capacity is dedicated to The Reverse Emo Changeling, and we are not taking on outside studio clients.<br>
@@ -478,6 +484,7 @@
                 </p>
 
                 <p><strong>Compliance & Zero-Tolerance: We maintain a systemic allergy to toxicity, harassment, and abuse. Any attempt to disrupt our ecosystem results in an immediate firewall IP block and incident reporting where warranted. We do not waste bandwidth on bad-faith actors.</strong></p>
+                <p><strong>Social Media Channels:</strong> Social media channels of creators represented or managed by the studio are strictly moderated by us. We actively ensure that hate speech and content breaching generally accepted standards of constructive discourse are removed before other visitors and the channel host/creator see them, and repeat or severe violators are banned.</p>
             </div>
         </details>
     </section>

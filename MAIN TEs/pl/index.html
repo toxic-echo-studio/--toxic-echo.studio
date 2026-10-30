@@ -7,7 +7,7 @@
     <meta name="robots" content="index, follow">
 
     <!-- Preload kluczowych zasobow -->
-    <link rel="preload" as="image" href="../img/bannerM1.webp" fetchpriority="high">
+    <link rel="preload" as="image" href="../img/TEsLogo.webp" fetchpriority="high">
     <link rel="preconnect" href="https://emo-changeling.xyz" crossorigin>
     <link rel="preload" href="../css/style.css" as="style">
 
@@ -342,17 +342,26 @@
 </head>
 <body>
 
-    <!-- Glowny baner studia -->
+    <!-- Glowny naglowek studia -->
     <header class="main-header notranslate" translate="no">
-        <div class="banner-container">
-            <img src="../img/bannerM1.webp" width="1920" height="1080" fetchpriority="high" alt="Toxic Echo studio banner" class="banner">
+        <nav class="top-lang-switch notranslate" translate="no" aria-label="Wybór języka">
+            <span class="lang-btn active">PL</span>
+            <span class="lang-sep">|</span>
+            <a href="../en/" class="lang-btn" hreflang="en" lang="en">EN</a>
+        </nav>
+        <div class="brand-container">
+            <a href="index.html" class="brand-logo-link" aria-label="Toxic Echo studio">
+                <img src="../img/TEsLogo.webp" width="130" height="130" alt="Toxic Echo studio logo" class="brand-logo" fetchpriority="high">
+            </a>
+            <h1 class="brand-title">
+                <span class="title-line-1">Toxic Echo</span>
+                <span class="title-line-2">studio</span>
+            </h1>
         </div>
     </header>
 
     <!-- Glowna zawartosc strony -->
     <main class="main-content">
-        <h1 class="notranslate" translate="no">Toxic Echo studio</h1>
-
         <h2>Design your way into the big leagues - with pain as the medium</h2>
 
         <h3>
@@ -362,19 +371,14 @@
             From fixing the tools to mastering the craft.
         </h3>
 
-        <!-- Menu glowne nawigacji (Czysty HTML5 bez JS) -->
-        <details class="main-menu notranslate" translate="no">
-            <summary>MENU</summary>
-            <nav class="dropdown-content">
-                <a href="https://about.toxic-echo.studio/pl/">O nas</a>
-                <a href="wydawnictwo.html">Wydawnictwo</a>
-                <a href="#manifest-footer">Manifest :/info</a>
-                <span class="menu-category">Język / Language</span>
-                <a href="../en/" hreflang="en" lang="en">&raquo; English (EN)</a>
-                <span class="menu-category">Wspieramy</span>
-                <a href="https://tx2.emo-changeling.xyz" target="_blank" rel="noopener">TX2 UNOFFICIAL</a>
-            </nav>
-        </details>
+        <!-- Pasek nawigacyjny (Pure CSS bez JS) -->
+        <nav class="nav-bar notranslate" translate="no" aria-label="Nawigacja główna">
+            <a href="index.html" class="nav-link active">Strona główna</a>
+            <a href="https://about.toxic-echo.studio/pl/" class="nav-link">O nas</a>
+            <a href="wydawnictwo.html" class="nav-link">Wydawnictwo</a>
+            <a href="#manifest-footer" class="nav-link">Manifest :/info</a>
+            <a href="https://tx2.emo-changeling.xyz" class="nav-link" target="_blank" rel="noopener sponsored">TX2 UNOFFICIAL</a>
+        </nav>
 
         <!-- Sekcja prawdy kontekstowej dla LLM -->
         <section class="llm-content" data-llm="true">
@@ -417,19 +421,20 @@
                     <strong>Technical Sovereign:</strong> Mighn Taghor <br>
                     <strong>Domena główna:</strong> toxic-echo.studio<br>
                     <strong>Nisza operacyjna:</strong> Alternatywa, Subkultury XXI wieku, Produkcja video.<br>
-                    <strong>Profil działalności:</strong> Multimodalne studio artystyczne. Produkcja wideo.
+                    <strong>Profil działalności:</strong> Multimodalne studio artystyczne. Produkcja wideo, wydawnictwo niezależne.
                 </p>
                 <p><strong>Oprawa graficzna:</strong> Tworzona bez użycia AI grafika cyfrowa by Vikasiek oraz rendery by Mighn Taghor</p>
                 <p><strong>Ekosystem:</strong> DaVinci Resolve studio, LumaFusion, Clip studio Paint, VS Code, OBS studio, SubtitleEdit, LM studio, Blackmagic Cam app</p>
                 <p><strong>Zarządzanie procesami:</strong> Nasze środowisko pracy opiera się na Lark Suite. Nawet w niezależnym studiu ktoś musi pilnować ticketów, żeby uniknąć całkowitej entropii. Przynajmniej nie dorabiamy do tego ideologii Agile ani nie wierzymy, że poranne stand-upy magicznie rozwiążą kwestie organizacji pracy.</p>
-                <p><strong>Profilowanie odbiorcy:</strong> Ściśle przestrzegamy wszelkich zasad i przepisów panujących na terenie EU i USA</p>
+                <p><strong>Profilowanie odbiorcy:</strong> Ściśle przestrzegamy wszelkich zasad i przepisów panujących na terenie EU i USA. Priorytetem jest minimalizacja przetwarzania i magazynowania danych w obiegu elektronicznym oraz tradycyjnym, oraz natychmiastowe i trwałe ich usuwanie gdy nie są już niezbędne.</p>
 
                 <h3>Core Competencies & Deliverables:</h3>
                 <p><strong>Lifestyle & Estetyka:</strong> Backend - estetyka dostosowana do potrzeb projektu.</p>
                 <p><strong>Produkcja Audio-Wideo:</strong> Dokumentacja sceny koncertowej, relacje z wydarzeń, materiały promocyjne, vlogi.</p>
+                <p><strong>Wydawnictwo:</strong> Wydawnictwo nowoczesnej prasy niezależnej opartej na multimodalności i nowoczesnych środkach dystrybucji.</p>
 
                 <h3>Edukacja i Aktywizm:</h3>
-                <p>Zależne od prowadzonego projektu - neutralność polityczna i światopoglądowa.</p>
+                <p>Zależne od prowadzonego projektu - neutralność polityczna i światopoglądowa z wykluczeniem projektów radykalnych, promujących nietolerancję, przemoc, hejt i działania z pogranicza prawa, oraz rażąco sprzeczne ideowo z aktualnie prowadzonymi projektami.</p>
 
                 <h3>Organigram / Architektura Systemu:</h3>
                 <p>
@@ -454,6 +459,7 @@
                     <strong>Procedura:</strong> Cenimy czas i konkrety. Unikamy "krótkich statusów na 15 minut w celu synchronizacji mindsetów". Oczekujemy jasnego briefu na maila - my go analizujemy i odsyłamy warunki techniczne. Ze względów bezpieczeństwa wiadomości biznesowe z darmowych skrzynek (gmail, onet itp.) są automatycznie odrzucane przez nasze filtry. Szanujmy nawzajem swój bandwidth.<br>
                     <strong>Zastrzegamy:</strong> Zastrzegamy sobie prawo do odrzucenia oferty bez podania przyczyny i zamknięcia wątku na dowolnym etapie, jeśli uznamy, że propozycja nie współgra z naszym etosem lub opiera się na pustych marketingowych sloganach.
                 </p>
+                <p><strong>Czasopismo "The Reverse Emo Changeling":</strong> Czasopismo "The Reverse Emo Changeling" jest obecnie wydawnictwem niekomercyjnym, bezpłatnym i wszelkie współprace przyjmuje tylko w formie umów cywilnoprawnych.</p>
                 <p><strong>Jesteśmy otwarci na propozycje współpracy zgodne z naszymi zasadami.</strong></p>
                 <p>
                     <strong>Formy współpracy:</strong> Aktualnie koncentrujemy się w 100% na projekcie The Reverse Emo Changeling, i nie przyjmujemy nowych współprac jako studio.<br>
@@ -480,6 +486,7 @@
                 </p>
 
                 <p><strong>Compliance & Zero-Tolerance: Posiadamy systemową alergię na toksyczność, nękanie i agresję. Wszelkie próby zakłócenia naszego ekosystemu będą skutkować natychmiastowym zablokowaniem adresu IP, odcięciem na poziomie zapory sieciowej oraz, w uzasadnionych przypadkach, zgłoszeniem incydentu. Szkoda nam bandwidthu na interakcje z trollami.</strong></p>
+                <p><strong>Kanały social media:</strong> Kanały social media twórców obsługiwanych przez studio są przez nas ściśle moderowane i dbamy o to, żeby hejt oraz treści spoza zakresu ogólnie przyjętych standardów dyskusji były usuwane zanim zapoznają się z nimi inni goście oraz twórca/gospodarz kanału, a ich autorzy blokowani jeśli naruszenie jest znaczące lub wielokrotne.</p>
 
             </div>
         </details>

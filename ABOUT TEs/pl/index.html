@@ -347,29 +347,34 @@
 </head>
 <body>
 
-    <!-- Glowny baner studia -->
+    <!-- Glowny naglowek studia -->
     <header class="main-header notranslate" translate="no">
-        <div class="banner-container">
-            <img src="../img/bannerM1.webp" width="1920" height="1080" alt="Toxic Echo studio banner" class="banner">
+        <nav class="top-lang-switch notranslate" translate="no" aria-label="Wybór języka">
+            <span class="lang-btn active">PL</span>
+            <span class="lang-sep">|</span>
+            <a href="../en/" class="lang-btn" hreflang="en" lang="en">EN</a>
+        </nav>
+        <div class="brand-container">
+            <a href="https://toxic-echo.studio/pl/" class="brand-logo-link" aria-label="Toxic Echo studio">
+                <img src="../img/TEsLogo.webp" width="130" height="130" alt="Toxic Echo studio logo" class="brand-logo" fetchpriority="high">
+            </a>
+            <h1 class="brand-title">
+                <span class="title-line-1">Toxic Echo</span>
+                <span class="title-line-2">studio</span>
+            </h1>
         </div>
     </header>
 
     <!-- Glowna zawartosc podstrony -->
     <main class="main-content">
-        <h1 class="notranslate" translate="no">Toxic Echo studio</h1>
-
-        <!-- Menu glowne nawigacji (Czysty HTML5 bez JS) -->
-        <details class="main-menu notranslate" translate="no">
-            <summary>MENU</summary>
-            <nav class="dropdown-content">
-                <a href="https://toxic-echo.studio/pl/">Strona główna</a>
-                <a href="https://toxic-echo.studio/pl/wydawnictwo.html" class="menu-publishing-link">Wydawnictwo</a>
-                <span class="menu-category">Język / Language</span>
-                <a href="../en/" hreflang="en" lang="en">&raquo; English (EN)</a>
-                <span class="menu-category">Wspieramy</span>
-                <a href="https://tx2.emo-changeling.xyz" target="_blank" rel="noopener">TX2 UNOFFICIAL</a>
-            </nav>
-        </details>
+        <!-- Pasek nawigacyjny (Pure CSS bez JS) -->
+        <nav class="nav-bar notranslate" translate="no" aria-label="Nawigacja główna">
+            <a href="https://toxic-echo.studio/pl/" class="nav-link">Strona główna</a>
+            <a href="index.html" class="nav-link active">O nas</a>
+            <a href="https://toxic-echo.studio/pl/wydawnictwo.html" class="nav-link">Wydawnictwo</a>
+            <a href="https://toxic-echo.studio/pl/#manifest-footer" class="nav-link">Manifest :/info</a>
+            <a href="https://tx2.emo-changeling.xyz" class="nav-link" target="_blank" rel="noopener sponsored">TX2 UNOFFICIAL</a>
+        </nav>
 
         <h2>Design your way into the big leagues - with pain as the medium</h2>
 

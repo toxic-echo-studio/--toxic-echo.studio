@@ -1,17 +1,45 @@
-################################################################################
-# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
-################################################################################
+# Środowisko
+.env
+.env.*
+!.env.example
+!.env.sample
 
-/.vs
+# IDE i narzędzia
+.vscode/
+.idea/
+.agents/
+.gemini/
 
-# System context profile (do not commit sensitive operational history)
-/.mighn_taghor_profile.md
+# Systemowe
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
 
-# Local build / environment files
-/__pycache__/
-*.pyc
-*.pyo
-*.pyd
-/.agents/
-/.vscode/
+# Zależności i paczki
+node_modules/
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
 
+# Wrażliwe dane i certyfikaty
+*.pem
+*.key
+*.cert
+*.crt
+*secret*
+
+# Tymczasowe
+*.tmp
+*.temp
+*.log
+*.bak
+*.swp
+*~
+.aider*
+
+.vs/
+.mighn_taghor_profile.md

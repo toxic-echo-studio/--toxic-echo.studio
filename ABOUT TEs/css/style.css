@@ -327,3 +327,213 @@ a.manifest-direct-link:hover {
     color: #00ff00;
     text-shadow: 0 0 6px #00ff00;
 }
+
+
+/* Naglowek i przelacznik jezyka */
+.main-header {
+    position: relative;
+    width: 100%;
+    padding: 30px 20px 10px 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-lang-switch {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 100;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #000000;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    padding: 6px 12px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+.top-lang-switch .lang-btn {
+    color: #00ff00;
+    text-decoration: none;
+    font-weight: bold;
+    min-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.top-lang-switch .lang-btn:hover {
+    color: #ff007f;
+    text-shadow: 0 0 6px #ff007f;
+}
+
+.top-lang-switch .lang-btn.active {
+    color: #ff007f;
+    cursor: default;
+    text-shadow: 0 0 6px #ff007f;
+}
+
+.top-lang-switch .lang-sep {
+    color: rgba(0, 255, 0, 0.4);
+    user-select: none;
+}
+
+/* Uklad brandingu: [logo] Toxic Echo / studio */
+.brand-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(16px, 3vw, 30px);
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.brand-logo-link {
+    display: inline-flex;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.brand-logo {
+    width: clamp(84px, 11vw, 130px);
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    display: block;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.brand-logo-link:hover .brand-logo {
+    transform: scale(1.02);
+    box-shadow: 0 0 18px rgba(0, 255, 0, 0.5);
+}
+
+.brand-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    margin: 0;
+    font-size: clamp(2.4rem, 5.2vw, 4.4rem);
+    font-weight: 800;
+    letter-spacing: clamp(2px, 0.8vw, 6px);
+    line-height: 1.05;
+    color: #00ff00;
+    text-shadow:
+        0 0 6px #00ff00,
+        0 0 12px #00ff00,
+        2px 2px 0px #000,
+        3px 3px 0px #ff0000;
+}
+
+.brand-title .title-line-1 {
+    display: block;
+    white-space: nowrap;
+}
+
+.brand-title .title-line-2 {
+    display: block;
+    font-size: 0.72em;
+    letter-spacing: clamp(3px, 1vw, 8px);
+    color: #c8ffc8;
+}
+
+/* ==========================================================================
+   Navigation Bar (Port z TX2 dopasowany do estetyki Toxic Echo Studio)
+   ========================================================================== */
+.nav-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(6px, 1.5vw, 16px);
+    margin: 25px auto;
+    padding: 8px clamp(10px, 2vw, 18px);
+    max-width: 950px;
+    width: 100%;
+    background-color: rgba(5, 5, 5, 0.85);
+    border: 1px solid rgba(0, 255, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.15);
+    box-sizing: border-box;
+}
+
+.nav-bar::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-link {
+    color: #c8ffc8;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    padding: 10px clamp(8px, 1.2vw, 14px);
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.nav-link:hover {
+    color: #ff007f;
+    border-bottom: 2px solid #ff007f;
+    text-shadow: 0 0 8px rgba(255, 0, 127, 0.6);
+}
+
+.nav-link.active {
+    color: #00ff00;
+    border-bottom: 2px solid #00ff00;
+    text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+}
+
+@media (max-width: 820px) {
+    .nav-bar {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x proximity;
+        scroll-padding-inline: 12px;
+        padding-inline: 12px;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+    }
+    .nav-bar::-webkit-scrollbar {
+        display: none;
+    }
+    .nav-link {
+        flex-shrink: 0;
+        scroll-snap-align: start;
+        font-size: 0.88rem;
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 640px) {
+    .main-header {
+        flex-direction: column;
+        padding-top: 15px;
+    }
+    .top-lang-switch {
+        position: static;
+        margin-bottom: 15px;
+        align-self: center;
+    }
+    .brand-container {
+        gap: 12px;
+    }
+    .brand-title {
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
+    }
+}
