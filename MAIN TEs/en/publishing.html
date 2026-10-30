@@ -196,16 +196,41 @@
       "identifier": "SO w Krakowie I Ns Rej PR 3553",
       "publishes": [
         {
-          "@type": ["Periodical", "WebSite"],
+          "@type": [
+            "Periodical",
+            "WebSite"
+          ],
           "@id": "https://reverse.emo-changeling.xyz/#periodical",
           "name": "The Reverse Emo Changeling",
           "url": "https://reverse.emo-changeling.xyz/"
         }
+      ],
+      "sponsor": [
+        {
+          "@type": "WebSite",
+          "@id": "https://tx2.emo-changeling.xyz/#website",
+          "name": "TX2 Unofficial - TX2 pigeonification ritual",
+          "url": "https://tx2.emo-changeling.xyz/"
+        }
       ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://tx2.emo-changeling.xyz/#website",
+      "url": "https://tx2.emo-changeling.xyz/",
+      "name": "TX2 Unofficial - TX2 pigeonification ritual",
+      "alternateName": [
+        "TX2 Unofficial Fansite",
+        "TX2 Pigeonification Ritual"
+      ],
+      "description": "Nieoficjalny serwis i projekt fanowski poświęcony zespołowi TX2, objęty patronatem medialnym Toxic Echo studio.",
+      "sponsor": {
+        "@id": "https://toxic-echo.studio/#org"
+      }
     }
   ]
 }
-    </script>
+</script>
 </head>
 <body>
 
@@ -236,8 +261,16 @@
             <a href="index.html" class="nav-link">Home</a>
             <a href="https://about.toxic-echo.studio/en/" class="nav-link">About Us</a>
             <a href="publishing.html" class="nav-link active">Publishing</a>
-            <a href="index.html#manifest-footer" class="nav-link">Manifesto :/info</a>
-            <a href="https://tx2.emo-changeling.xyz" class="nav-link" target="_blank" rel="noopener sponsored">TX2 UNOFFICIAL</a>
+            <a href="index.html#manifest-footer" class="nav-link">Manifesto/FAQ</a>
+                    <div class="nav-item-dropdown">
+            <button type="button" class="nav-dropdown-btn" aria-haspopup="true" aria-expanded="false">
+                PATRONAGE <span class="dropdown-arrow">&#9662;</span>
+            </button>
+            <div class="nav-dropdown-menu">
+                <a href="https://emo-changeling.xyz" class="nav-dropdown-item" target="_blank" rel="noopener">Emo Changeling</a>
+                <a href="https://tx2.emo-changeling.xyz" class="nav-dropdown-item" target="_blank" rel="noopener sponsored">TX2 Unofficial</a>
+            </div>
+        </div>
         </nav>
 
         <!-- Lead publisher status note -->

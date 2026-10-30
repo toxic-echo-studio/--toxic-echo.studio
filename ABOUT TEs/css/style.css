@@ -537,3 +537,95 @@ a.manifest-direct-link:hover {
         font-size: clamp(1.8rem, 7vw, 2.4rem);
     }
 }
+
+
+/* Dropdown podmenu PATRONAT */
+.nav-item-dropdown {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+}
+
+.nav-dropdown-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: clamp(0.85rem, 1.1vw, 1.05rem);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #c8ffc8;
+    padding: 10px clamp(8px, 1.2vw, 14px);
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.nav-dropdown-btn:hover,
+.nav-item-dropdown:hover .nav-dropdown-btn,
+.nav-item-dropdown:focus-within .nav-dropdown-btn {
+    color: #ff007f;
+    border-bottom: 2px solid #ff007f;
+    text-shadow: 0 0 8px rgba(255, 0, 127, 0.6);
+}
+
+.dropdown-arrow {
+    font-size: 0.7em;
+    transition: transform 0.2s ease;
+}
+
+.nav-item-dropdown:hover .dropdown-arrow,
+.nav-item-dropdown:focus-within .dropdown-arrow {
+    transform: rotate(180deg);
+}
+
+.nav-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #050505;
+    border: 1px solid rgba(0, 255, 0, 0.4);
+    box-shadow: 0 0 12px rgba(0, 255, 0, 0.25);
+    min-width: 190px;
+    z-index: 200;
+    padding: 6px 0;
+    flex-direction: column;
+}
+
+.nav-item-dropdown:hover .nav-dropdown-menu,
+.nav-item-dropdown:focus-within .nav-dropdown-menu {
+    display: flex;
+}
+
+.nav-dropdown-item {
+    color: #c8ffc8;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 0.88rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 10px 16px;
+    white-space: nowrap;
+    text-align: left;
+    transition: all 0.2s ease;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-dropdown-item:hover {
+    color: #00ff00;
+    background-color: rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 6px rgba(0, 255, 0, 0.6);
+}
+
+#manifest-footer:target > .manifest-content {
+    display: block !important;
+}
