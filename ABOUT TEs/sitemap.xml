@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url>
+<loc>https://about.toxic-echo.studio/</loc>
+<lastmod>2026-10-20</lastmod>
+<xhtml:link href="https://about.toxic-echo.studio/" hreflang="x-default" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/en/" hreflang="en" rel="alternate"/>
+</url>
+<url>
+<loc>https://about.toxic-echo.studio/pl/</loc>
+<lastmod>2026-10-20</lastmod>
+<xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/en/" hreflang="en" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/" hreflang="x-default" rel="alternate"/>
+</url>
+<url>
+<loc>https://about.toxic-echo.studio/en/</loc>
+<lastmod>2026-10-20</lastmod>
+<xhtml:link href="https://about.toxic-echo.studio/pl/" hreflang="pl" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/en/" hreflang="en" rel="alternate"/>
+<xhtml:link href="https://about.toxic-echo.studio/" hreflang="x-default" rel="alternate"/>
+</url>
+</urlset>

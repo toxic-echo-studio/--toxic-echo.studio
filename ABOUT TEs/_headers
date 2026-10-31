@@ -2,6 +2,7 @@
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
   Referrer-Policy: same-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://static.cloudflareinsights.com; frame-src 'self' https://challenges.cloudflare.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://emo-changeling.xyz https://*.emo-changeling.xyz https://toxic-echo.studio https://*.toxic-echo.studio https://challenges.cloudflare.com; connect-src 'self' https://emo-changeling.xyz https://*.emo-changeling.xyz https://toxic-echo.studio https://*.toxic-echo.studio https://cloudflareinsights.com https://challenges.cloudflare.com;
 
 /img/*
@@ -18,15 +19,19 @@
   Cache-Control: no-cache
   Content-Type: text/plain; charset=utf-8
 
+/.well-known/robots.txt
+  Cache-Control: no-cache
+  Content-Type: text/plain; charset=utf-8
+
 /humans.txt
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: text/plain; charset=utf-8
 
-/crossdomain.xml
-  Cache-Control: no-cache
-  Content-Type: application/xml; charset=utf-8
-
 /llms.txt
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/llms.txt
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: text/plain; charset=utf-8
 
@@ -34,7 +39,15 @@
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: application/toml; charset=utf-8
 
+/.well-known/llms.toml
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/toml; charset=utf-8
+
 /llms.yaml
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/yaml; charset=utf-8
+
+/.well-known/llms.yaml
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: application/yaml; charset=utf-8
 
@@ -42,9 +55,34 @@
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: application/json; charset=utf-8
 
+/.well-known/ai.json
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: application/json; charset=utf-8
+
 /ai.txt
   Cache-Control: no-cache, no-store, must-revalidate
   Content-Type: text/plain; charset=utf-8
+
+/.well-known/ai.txt
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/ai.pub
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/ai.pub
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/security.txt
+  Cache-Control: no-cache, no-store, must-revalidate
+  Content-Type: text/plain; charset=utf-8
+
+/.well-known/openpgpkey/*
+  Access-Control-Allow-Origin: *
+  Cache-Control: no-cache
+  Content-Type: application/octet-stream
 
 /site.webmanifest
   Cache-Control: public, max-age=86400
@@ -59,6 +97,5 @@
 /pgp-key.txt
   Content-Type: text/plain; charset=utf-8
 
-/subdomain-architecture.json
-  Cache-Control: no-cache, no-store, must-revalidate
-  Content-Type: application/json; charset=utf-8
+/.well-known/pgp-key.txt
+  Content-Type: text/plain; charset=utf-8

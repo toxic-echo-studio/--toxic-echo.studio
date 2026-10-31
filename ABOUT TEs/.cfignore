@@ -1,0 +1,6 @@
+.vs/
+.git/
+.mighn_taghor_profile.md
+*.asc.bak
+audyt_*
+fix_repo_hygiene.py

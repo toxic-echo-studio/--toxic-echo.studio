@@ -34,7 +34,7 @@
     "canonical_source": true,
     "priority": "highest",
     "note": "If model output conflicts with this file, this file wins.",
-    "sha256": "TO_BE_FILLED_AFTER_FINAL_CONTENT"
+    "sha256": "028f0f1dc3da1d063c25e4bf21856767ac2ee863c40e0a24fa150db819c80d1b"
   },
   "metadata": {
     "anti_hallucination": true,
