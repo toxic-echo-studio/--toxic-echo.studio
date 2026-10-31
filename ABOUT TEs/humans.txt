@@ -23,7 +23,7 @@ Subcultural Media: The Reverse Emo Changeling - https://reverse.emo-changeling.x
 Community Hub: Emo Changeling Ecosystem - https://emo-changeling.xyz
 Wspieramy projekt: TX2 unofficial fansite - https://tx2.emo-changeling.xyz
 
-Last update: 2026-10-20
+Last update: 2026-10-31
 Standards: HTML5, CSS3, WCAG AA, Progressive Enhancement
 Components: robots.txt, sitemap.xml, llms.txt, ai.txt
 License: Code: GNU GPL v3 (LICENSE.txt) | Content & Media: CC BY-NC-ND 4.0
