@@ -1,0 +1,28 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "About Toxic Echo Studio"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:toxic-echo:about:llms-context",
+      "displayName": "About Toxic Echo Studio - LLMs Context",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://about.toxic-echo.studio/llms.txt",
+      "representativeQueries": [
+        "about toxic echo studio",
+        "mighn taghor director and technical architect"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:about:ai-manifest",
+      "displayName": "AI Usage Policy and Permissions",
+      "type": "application/agent-card+json",
+      "url": "https://about.toxic-echo.studio/ai.json",
+      "representativeQueries": [
+        "about toxic echo studio ai policy",
+        "provenance and openpgp verification"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Toxic Echo Studio"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:toxic-echo:knowledge:llms-context",
+      "displayName": "Toxic Echo Studio - LLMs Context & Knowledge Base",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "url": "https://toxic-echo.studio/llms.txt",
+      "representativeQueries": [
+        "what is toxic echo studio",
+        "mighn taghor audio video production and infrastructure"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:policy:ai-manifest",
+      "displayName": "AI Usage Policy and Permissions",
+      "type": "application/agent-card+json",
+      "url": "https://toxic-echo.studio/ai.json",
+      "representativeQueries": [
+        "toxic echo studio ai policy",
+        "provenance and identity separation policy"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:architecture:subdomains",
+      "displayName": "Subdomain Architecture Specification",
+      "type": "application/json",
+      "url": "https://toxic-echo.studio/subdomain-architecture.json",
+      "representativeQueries": [
+        "toxic echo studio subdomain architecture",
+        "the reverse emo changeling ecosystem"
+      ]
+    }
+  ]
+}
