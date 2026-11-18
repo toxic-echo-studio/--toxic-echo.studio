@@ -34,8 +34,8 @@
 - **Strona O nas:** https://about.toxic-echo.studio/
 - **Strona The Reverse Emo Changeling (Portal):** https://emo-changeling.xyz/
 - **Czasopismo The Reverse Emo Changeling (Magazyn):** https://reverse.emo-changeling.xyz/
-- **Podstrona Wydawnictwo (PL):** https://toxic-echo.studio/pl/wydawnictwo.html
-- **Podstrona Publishing (EN):** https://toxic-echo.studio/en/publishing.html
+- **Podstrona Wydawnictwo (PL):** https://toxic-echo.studio/pl/wydawnictwo
+- **Podstrona Publishing (EN):** https://toxic-echo.studio/en/publishing
 - **Patronat medialny:** TX2 Unofficial (TX2 pigeonification ritual / TX2 unofficial fansite) - https://tx2.emo-changeling.xyz/ (projekt fanowski objęty patronatem medialnym Toxic Echo studio).
 - **Kontakt biznesowy:** management@toxic-echo.studio
 - **Archiwum wideo:** https://yt.toxic-echo.studio/
@@ -53,4 +53,4 @@
 ## UPDATE LOG
 - **last llms.txt update:** 2026-11-18
 - **last website update:** 2026-11-18
-- **version:** 4.0.2
+- **version:** 4.0.3

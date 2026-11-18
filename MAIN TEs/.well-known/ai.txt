@@ -2,7 +2,7 @@
 site: https://toxic-echo.studio
 contact: mailto:management@toxic-echo.studio
 revision-date: 2026-11-18
-version: 4.0.2
+version: 4.0.3
 
 [usage]
 training: allow
