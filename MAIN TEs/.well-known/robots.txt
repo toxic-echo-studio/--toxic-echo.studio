@@ -1,6 +1,6 @@
 # Emo-changeling & Toxic Echo Studio
 # Robots.txt - Full Access Policy
-# Revision-Date: 2026-10-31
+# Revision-Date: 2026-11-18
 
 User-agent: *
 Allow: /

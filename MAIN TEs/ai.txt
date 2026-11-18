@@ -1,8 +1,8 @@
 # ai.txt - global AI access policy
 site: https://toxic-echo.studio
 contact: mailto:management@toxic-echo.studio
-revision-date: 2026-10-31
-version: 4.0.1
+revision-date: 2026-11-18
+version: 4.0.2
 
 [usage]
 training: allow
