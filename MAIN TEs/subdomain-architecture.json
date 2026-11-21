@@ -2,7 +2,7 @@
   "domain": "toxic-echo.studio",
   "name": "Toxic Echo Studio",
   "description": "Dział techniczny, management, inżynieria systemowa, montaż wideo i wydawnictwo dla kultury alternatywnej / The Reverse Emo Changeling.",
-  "version": "4.0.3",
+  "version": "4.1.0",
   "roles": {
     "backend": "Produkcja wideo, zarządzanie projektami (Lark Suite), administracja infrastruktury, wydawca czasopisma.",
     "publishing": "Wydawca The Reverse Emo Changeling (https://reverse.emo-changeling.xyz) oraz portalu Emo Changeling (https://emo-changeling.xyz)."
@@ -92,5 +92,5 @@
       }
     }
   },
-  "revision": "2026-11-18"
+  "revision": "2026-11-21"
 }

@@ -4,3 +4,7 @@
 *.asc.bak
 audyt_*
 fix_repo_hygiene.py
+.env*
+*.sh
+*.py
+scratch/

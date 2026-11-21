@@ -1,0 +1,78 @@
+name: ABOUT TEs IndexNow Notification
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'ABOUT TEs/**'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notify-indexnow:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Submit changed ABOUT TEs URLs to IndexNow
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BEFORE="${{ github.event.before }}"
+          AFTER="${{ github.sha }}"
+
+          if [ "${{ github.event_name }}" = "push" ] \
+            && [ -n "$BEFORE" ] \
+            && [ "$BEFORE" != "0000000000000000000000000000000000000000" ] \
+            && git cat-file -e "${BEFORE}^{commit}" 2>/dev/null; then
+            changed_files=$(git -c core.quotepath=false diff --name-only --diff-filter=AM "$BEFORE" "$AFTER" -- 'ABOUT TEs/*.html' 'ABOUT TEs/**/*.html')
+          elif git rev-parse --verify HEAD~1 >/dev/null 2>&1; then
+            changed_files=$(git -c core.quotepath=false diff --name-only --diff-filter=AM HEAD~1 HEAD -- 'ABOUT TEs/*.html' 'ABOUT TEs/**/*.html')
+          else
+            changed_files=$(git -c core.quotepath=false diff-tree --no-commit-id --name-only -r --diff-filter=AM HEAD -- 'ABOUT TEs/*.html' 'ABOUT TEs/**/*.html')
+          fi
+
+          urls=()
+          while IFS= read -r file; do
+            [ -z "$file" ] && continue
+            [[ "$file" == *.asc ]] && continue
+            [ "$file" = "ABOUT TEs/404.html" ] && continue
+            [[ "$file" == "ABOUT TEs"/yandex_*.html ]] && continue
+
+            rel="${file#"ABOUT TEs/"}"
+            if [ "$rel" = "index.html" ]; then
+              path="/"
+            elif [[ "$rel" == */index.html ]]; then
+              path="/${rel%index.html}"
+            else
+              path="/${rel%.html}"
+            fi
+
+            urls+=("https://about.toxic-echo.studio${path}")
+          done <<< "$changed_files"
+
+          if [ "${#urls[@]}" -eq 0 ]; then
+            echo "No changed ABOUT TEs URLs to submit."
+            exit 0
+          fi
+
+          sleep 75
+
+          payload=$(printf '%s\n' "${urls[@]}" | jq -R . | jq -s '{
+            host: "about.toxic-echo.studio",
+            key: "7f3a9d2b8e1c4f5a6b0d8e2c1f9a4b3d",
+            keyLocation: "https://about.toxic-echo.studio/7f3a9d2b8e1c4f5a6b0d8e2c1f9a4b3d.txt",
+            urlList: .
+          }')
+
+          curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "$payload"

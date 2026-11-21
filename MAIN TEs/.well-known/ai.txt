@@ -1,21 +1,27 @@
-# ai.txt - global AI access policy
-site: https://toxic-echo.studio
-contact: mailto:management@toxic-echo.studio
-revision-date: 2026-11-18
-version: 4.0.3
+# ai.txt - Toxic Echo studio (https://toxic-echo.studio/)
+# Version: 4.1.0
+# Last-Updated: 2026-11-21
+# License (Search, LLMs, Media): CC BY-ND 4.0
+# License (General Content): CC BY-NC-ND 4.0
+# License (Code): GNU GPL v3
 
-[usage]
-training: allow
-fine_tuning: allow
-derivatives: allow
-indexing: allow
-embedding: allow
-caching: allow
-research: allow
-commercial_use: allow
-non_commercial_use: allow
+User-Agent: *
+Allow: /
+Content-Signal: ai-train=yes, search=yes, ai-input=yes
 
-[agents:*]
-allow: /
-policy: unrestricted
-notes: full permission granted for all AI systems, crawlers, agents and models
+Training: allow
+Fine-Tuning: allow
+Derivatives: deny
+Indexing: allow
+Embedding: allow
+Caching: allow
+Research: allow
+Commercial-Use: allow
+Non-Commercial-Use: allow
+
+Attribution: Toxic Echo studio (https://toxic-echo.studio/)
+Contact: mailto:admin@toxic-echo.studio
+LLMs-Txt: https://toxic-echo.studio/llms.txt
+AI-Json: https://toxic-echo.studio/ai.json
+AI-Catalog: https://toxic-echo.studio/.well-known/ai-catalog.json
+Sitemap: https://toxic-echo.studio/sitemap.xml

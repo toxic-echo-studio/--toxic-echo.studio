@@ -1,37 +1,100 @@
 {
   "specVersion": "1.0",
-  "host": {
-    "displayName": "Toxic Echo Studio"
+  "name": "Toxic Echo studio",
+  "description": "Multimodal art studio, audio-video production backend, and independent press publisher.",
+  "version": "4.1.0",
+  "lastUpdated": "2026-11-21",
+  "url": "https://toxic-echo.studio/",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "architecture": {
+    "rendering": "Static bilingual HTML5/CSS3 documents",
+    "scripts": [
+      "/js/manifest.js"
+    ],
+    "storage": "No cookies and no localStorage"
   },
+  "host": {
+    "displayName": "Toxic Echo studio"
+  },
+  "credits": {
+    "backendDirector": "Mighn Taghor",
+    "publisher": "Bartosz Gala",
+    "frontendCreator": "Nico Łach (Zebroid, Vikasiek, Wiktor, Marina)",
+    "infrastructure": "Toxic Echo studio (https://toxic-echo.studio/)"
+  },
+  "contacts": [
+    "management@toxic-echo.studio",
+    "admin@toxic-echo.studio",
+    "publisher@toxic-echo.studio",
+    "mighnt@toxic-echo.studio"
+  ],
+  "sitemaps": [
+    "https://toxic-echo.studio/sitemap.xml"
+  ],
+  "pages": [
+    {
+      "key": "gate",
+      "url": "https://toxic-echo.studio/",
+      "title": "Toxic Echo studio",
+      "lastModified": "2026-11-21"
+    },
+    {
+      "key": "home",
+      "pl_url": "https://toxic-echo.studio/pl/",
+      "en_url": "https://toxic-echo.studio/en/",
+      "pl_title": "Toxic Echo studio | Edycja Polska",
+      "en_title": "Toxic Echo studio | English Edition",
+      "lastModified": "2026-11-21"
+    },
+    {
+      "key": "publishing",
+      "pl_url": "https://toxic-echo.studio/pl/wydawnictwo",
+      "en_url": "https://toxic-echo.studio/en/publishing",
+      "pl_title": "Wydawnictwo | Toxic Echo studio",
+      "en_title": "Publishing | Toxic Echo studio",
+      "lastModified": "2026-11-21"
+    }
+  ],
   "entries": [
     {
       "identifier": "urn:air:toxic-echo:knowledge:llms-context",
-      "displayName": "Toxic Echo Studio - LLMs Context & Knowledge Base",
-      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "displayName": "LLMs Context & Overview",
+      "type": "text/markdown",
       "url": "https://toxic-echo.studio/llms.txt",
       "representativeQueries": [
         "what is toxic echo studio",
-        "mighn taghor audio video production and infrastructure"
+        "toxic echo studio technical stack"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:knowledge:llms-yaml",
+      "displayName": "LLMs Structured YAML",
+      "type": "application/yaml",
+      "url": "https://toxic-echo.studio/llms.yaml",
+      "representativeQueries": [
+        "toxic echo studio entity structure"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:knowledge:llms-toml",
+      "displayName": "LLMs Structured TOML",
+      "type": "application/toml",
+      "url": "https://toxic-echo.studio/llms.toml",
+      "representativeQueries": [
+        "toxic echo studio endpoints and contacts"
       ]
     },
     {
       "identifier": "urn:air:toxic-echo:policy:ai-manifest",
-      "displayName": "AI Usage Policy and Permissions",
-      "type": "application/agent-card+json",
+      "displayName": "AI Usage Policy and Licensing",
+      "type": "application/json",
       "url": "https://toxic-echo.studio/ai.json",
       "representativeQueries": [
-        "toxic echo studio ai policy",
-        "provenance and identity separation policy"
-      ]
-    },
-    {
-      "identifier": "urn:air:toxic-echo:architecture:subdomains",
-      "displayName": "Subdomain Architecture Specification",
-      "type": "application/json",
-      "url": "https://toxic-echo.studio/subdomain-architecture.json",
-      "representativeQueries": [
-        "toxic echo studio subdomain architecture",
-        "the reverse emo changeling ecosystem"
+        "toxic echo studio licensing cc by-nd 4.0",
+        "gnu gpl v3 code license"
       ]
     }
   ]

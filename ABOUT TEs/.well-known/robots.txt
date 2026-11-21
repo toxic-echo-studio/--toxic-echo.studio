@@ -1,6 +1,8 @@
-# Emo-changeling & Toxic Echo Studio
-# Robots.txt - Full Access Policy
-# Revision-Date: 2026-11-18
+# robots.txt - Toxic Echo studio (https://about.toxic-echo.studio/)
+# Revision-Date: 2026-11-21
+# License (Search, LLMs, Media): Creative Commons Attribution-NoDerivatives 4.0 International (CC BY-ND 4.0)
+# License (General Content): Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+# License (Code): GNU General Public License v3.0 (GNU GPL v3)
 
 User-agent: *
 Allow: /
@@ -13,4 +15,4 @@ Content-Signal: ai-train=yes, search=yes, ai-input=yes
 # Nie blokujemy zadnych podstron ani zasobow graficznych.
 
 Sitemap: https://about.toxic-echo.studio/sitemap.xml
-X-Domain-Map: https://toxic-echo.studio/subdomain-architecture.json
+# X-Domain-Map: https://toxic-echo.studio/subdomain-architecture.json

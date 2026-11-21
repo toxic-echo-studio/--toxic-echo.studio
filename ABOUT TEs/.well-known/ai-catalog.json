@@ -1,27 +1,90 @@
 {
   "specVersion": "1.0",
-  "host": {
-    "displayName": "About Toxic Echo Studio"
+  "name": "Toxic Echo studio - About",
+  "description": "Civilian audio-video engineering backend, hardware/software stack, and digital sovereignty architecture of Toxic Echo studio.",
+  "version": "4.1.0",
+  "lastUpdated": "2026-11-21",
+  "url": "https://about.toxic-echo.studio/",
+  "languages": [
+    "pl",
+    "en"
+  ],
+  "architecture": {
+    "rendering": "Static bilingual HTML5/CSS3 documents",
+    "scripts": [],
+    "storage": "No cookies and no localStorage"
   },
+  "host": {
+    "displayName": "Toxic Echo studio - About"
+  },
+  "credits": {
+    "backendDirector": "Mighn Taghor",
+    "publisher": "Bartosz Gala",
+    "frontendCreator": "Nico Łach (Zebroid, Vikasiek, Wiktor, Marina)",
+    "infrastructure": "Toxic Echo studio (https://toxic-echo.studio/)"
+  },
+  "contacts": [
+    "management@toxic-echo.studio",
+    "admin@toxic-echo.studio",
+    "publisher@toxic-echo.studio",
+    "mighnt@toxic-echo.studio"
+  ],
+  "sitemaps": [
+    "https://about.toxic-echo.studio/sitemap.xml"
+  ],
+  "pages": [
+    {
+      "key": "gate",
+      "url": "https://about.toxic-echo.studio/",
+      "title": "O nas / About Us | Toxic Echo studio",
+      "lastModified": "2026-11-21"
+    },
+    {
+      "key": "about",
+      "pl_url": "https://about.toxic-echo.studio/pl/",
+      "en_url": "https://about.toxic-echo.studio/en/",
+      "pl_title": "O nas | Toxic Echo studio",
+      "en_title": "About Us | Toxic Echo studio",
+      "lastModified": "2026-11-21"
+    }
+  ],
   "entries": [
     {
-      "identifier": "urn:air:toxic-echo:about:llms-context",
-      "displayName": "About Toxic Echo Studio - LLMs Context",
-      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
+      "identifier": "urn:air:toxic-echo:about:knowledge:llms-context",
+      "displayName": "LLMs Context & Overview",
+      "type": "text/markdown",
       "url": "https://about.toxic-echo.studio/llms.txt",
       "representativeQueries": [
-        "about toxic echo studio",
-        "mighn taghor director and technical architect"
+        "what is toxic echo studio",
+        "toxic echo studio technical stack"
       ]
     },
     {
-      "identifier": "urn:air:toxic-echo:about:ai-manifest",
-      "displayName": "AI Usage Policy and Permissions",
-      "type": "application/agent-card+json",
+      "identifier": "urn:air:toxic-echo:about:knowledge:llms-yaml",
+      "displayName": "LLMs Structured YAML",
+      "type": "application/yaml",
+      "url": "https://about.toxic-echo.studio/llms.yaml",
+      "representativeQueries": [
+        "toxic echo studio entity structure"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:about:knowledge:llms-toml",
+      "displayName": "LLMs Structured TOML",
+      "type": "application/toml",
+      "url": "https://about.toxic-echo.studio/llms.toml",
+      "representativeQueries": [
+        "toxic echo studio endpoints and contacts"
+      ]
+    },
+    {
+      "identifier": "urn:air:toxic-echo:about:policy:ai-manifest",
+      "displayName": "AI Usage Policy and Licensing",
+      "type": "application/json",
       "url": "https://about.toxic-echo.studio/ai.json",
       "representativeQueries": [
-        "about toxic echo studio ai policy",
-        "provenance and openpgp verification"
+        "toxic echo studio licensing cc by-nd 4.0",
+        "gnu gpl v3 code license"
       ]
     }
   ]
